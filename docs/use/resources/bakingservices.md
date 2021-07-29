@@ -17,5 +17,5 @@ sidebar_position: 3
 
   * "software for distributing baking rewards with delegators."
 
-## [Need more Baking resources?](../baking/)
+## [Need more Baking resources?](/use/baking/key-baking-resources/)
 
