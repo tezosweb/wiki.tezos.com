@@ -52,7 +52,7 @@ module.exports = {
           items: [
             {
               label: 'Learn',
-              href: '/docs/intro',
+              href: 'https://tezos.com/learn/getting-started/',
             },
             {
               label: 'Build',
@@ -73,23 +73,23 @@ module.exports = {
           items: [
             {
               label: 'White paper',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://tezos.com/whitepaper.pdf',
             },
             {
-              label: 'Getting started',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Getting Started',
+              href: 'https://tezos.com/learn/getting-started/',
             },
             {
               label: 'Developer Portal',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://tezos.com/developer-portal/',
             },
             {
               label: 'Tezos Wiki',
-              href: 'https://twitter.com/docusaurus',
+              href: '/',
             },
             {
               label: 'Gitlab',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://gitlab.com/tezos',
             },
           ],
         },
