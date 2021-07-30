@@ -50,7 +50,7 @@ module.exports = {
           items: [
             {
               label: 'Learn',
-              href: 'https://tezos.com/learn/getting-started/',
+              href: 'https://tezos.com/learn/getting-started',
             },
             {
               label: 'Build',
