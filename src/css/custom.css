@@ -28,6 +28,9 @@
   --ifm-font-family-base: "Roboto";
 
 }
+.markdown > *:first-child {
+  margin-top: -1.5rem !important;
+}
 
 @media (min-width: 997px) {
   .menu {
@@ -54,11 +57,51 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .col {
-  padding-left: 1.5rem !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
 }
 
 .hash-link {
   display: none;
+}
+
+.gradient {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(265.58deg,#9f329f -35.89%,#1161fe 96.06%);
+  background-clip: text;
+}
+
+.intro-banner {
+  background: radial-gradient(circle, #233456, #272D3D);
+  min-height: 25rem;
+  margin-left: -60px;
+  margin-right: -60px;
+  backdrop-filter: blur(4px);
+
+}
+
+.intro-text {
+  padding-top: 5rem;
+  font-family: 'GT Eesti Pro Display';
+  color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 3rem;
+
+
+}
+
+.intro-text h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.25rem;
+  line-height: 70px;
+  color: white;
+  width: 90%;
+}
+
+.into-text p {
+  width: 60%;
 }
 
 .navbar {
@@ -78,7 +121,9 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 .menu__link {
   color: #768AB1;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 22px;
+  font-size: 16px;
 }
 .menu__link--active, .menu__link:hover {
   color: #0F62FF;
@@ -126,17 +171,38 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   margin-top: 11px;
 }
 h1 {
-  font-size: 52px;
-  line-height: 130%;
+  font-size: 60px;
+  line-height: 70px;
   padding-top: 50px;
   font-family: 'GT Eesti Pro Display' !important;
   font-weight: 400;
 }
+
 h2 {
+  font-size: 52px;
+  line-height: 130%;
+
+  font-family: 'GT Eesti Pro Display' !important;
+  font-weight: 400;
+}
+h3 {
   font-size: 26px;
+  line-height: 32.5%;
+
+  font-family: 'GT Eesti Pro Display' !important;
+  font-weight: 400;
 }
 
-h1, h2, .pagination-nav__label, .navbar__title {
+/* h2 {
+  font-size: 52px;
+  line-height: 66px;
+}
+
+h3 {
+  font-size: 26px;
+} */
+
+h1, h2, h3, .pagination-nav__label, .navbar__title {
   font-family: 'GT Eesti Pro Display' !important;
   font-weight: 400;
 }

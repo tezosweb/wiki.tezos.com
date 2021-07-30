@@ -33,9 +33,7 @@ module.exports = {
         {to: 'https://tezos.com/learn/getting-started/', label: 'Learn', position: 'right'},
         {to: 'https://tezos.com/developer-portal/', label: 'Build', position: 'right'},
         {to: 'https://tezos.com/community/', label: 'Community', position: 'right'},
-        {to: '/blog', label: 'News', position: 'right'},
         {to: 'https://tezos.com/careers/', label: 'Careers', position: 'right'},
-        {to: '/blog', label: 'Tezswag', position: 'right'},
         // {
         //   href: 'https://github.com/facebook/docusaurus',
         //   label: 'GitHub',
