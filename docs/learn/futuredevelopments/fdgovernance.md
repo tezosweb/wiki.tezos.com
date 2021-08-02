@@ -1,17 +1,19 @@
 ---
 sidebar_position: 4
 hide_table_of_contents: true
+title: "Governance"
+hide_title: true
 ---
 
-# Governance
+## Governance
 
-## Improving the Amendment Process
+### Improving the Amendment Process
 
 Another powerful feature of Tezos is that amendment rules can themselves be amended. This means that people can vote to change the way in which votes are carried out. This is important because voting systems can sometimes be gamed, and a change in the governance mechanism itself may at times be necessary.
 
 Examples of ideas which are being explored in this domain are lengthened proposal periods, proposal fees, changes to quorum floors, and the moving of vote counts from the beginning of a voting period to the end. This [blog post](https://medium.com/tezos/amending-tezos-b77949d97e1e) outlines a few ways in which the amendment process might be improved in the future.
 
-## Constitutionalism
+### Constitutionalism
 
 Constitutionalism refers to the adherence to a set of rules regarding protocol upgrades. Theis set of rules would create additional safeguards for the Tezos blockchain during protocol upgrades. One such rule might be that certain files \(such as the one that handles the generation of new tokens\) are elevated to a privileged status. These files would then require a higher vote threshold or a longer voting period to be changed.
 
@@ -19,7 +21,7 @@ One [idea which has been discussed](https://medium.com/tezos/a-few-directions-to
 
 Another method to enforce constitutionalism would be to have a proof checker \(e.g. Coq\) embedded into the Tezos protocol. The proof checker works by employing a set of filters. Each filter ensures that certain files are not modified or removed. A protocol upgrade that passes all the filters has been shown not to violate any of the rules stated in the constitution.
 
-## Futarchy
+### Futarchy
 
 Futarchy is a governance concept first proposed by [Robin Hanson](http://mason.gmu.edu/~rhanson/futarchy.html), who proposed the notion of "voting on values and betting on beliefs."
 

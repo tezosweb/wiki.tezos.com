@@ -1,8 +1,10 @@
 ---
 hide_table_of_contents: true
+title: "Tezos Nomenclature"
+hide_title: true
 ---
 
-# Tezos Nomenclature
+## Tezos Nomenclature
 
 The following is adapted from this [Agora post](https://forum.tezosagora.org/t/nomenclature/2376) by Tezos Co-founder Arthur Breitman. As noted in the post, there is no official body which can authoritatively set Tezos nomenclature, but the following is recommended:
 

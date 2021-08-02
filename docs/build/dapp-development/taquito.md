@@ -1,8 +1,10 @@
 ---
 sidebar_position: 1
 hide_table_of_contents: true
+title: "Taquito"
+hide_title: true
 ---
-# Taquito
+## Taquito
 
 As mentioned in previous sections, the Tezos-node offers a JSON/RPC interface. However, we want to be able to communicate with the _Tezos-node_ **without** using the _Tezos-client_ so that we can write applications and simply hand them over to the client without having to do anything else. 
 

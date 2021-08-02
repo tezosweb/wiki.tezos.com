@@ -1,14 +1,16 @@
 ---
 sidebar_position: 3
 hide_table_of_contents: true
+title: "Build your first Tezos dApp"
+hide_title: true
 description: >-
   Learn how to build a dapp on Tezos that connects to wallets and updates a
   smart contract
 ---
 
-# Build your first Tezos dApp
+## Build your first Tezos dApp
 
-## How to build your first Tezos dapp \(2021 edition\) <a id="1ce3"></a>
+### How to build your first Tezos dapp \(2021 edition\) <a id="1ce3"></a>
 
 [![Claude Barde](https://miro.medium.com/fit/c/96/96/1*0W9TcPUQ1sNbgrEZM9D40Q.jpeg)](https://claudebarde.medium.com/?source=post_page-----b1263b4ba016--------------------------------)
 
@@ -23,7 +25,7 @@ If you want to check the whole code of the dapp, it is available in [this Github
 
 Without further ado, let’s learn how to build a Tezos dapp 👷👷‍♂️
 
-## Installing and importing the required packages <a id="9096"></a>
+### Installing and importing the required packages <a id="9096"></a>
 
 As mentioned above, the dapp is using two main packages: the `Taquito` package \(to interact with the blockchain\) and the `BeaconWallet` package \(to interact with the user’s wallet\). These packages are available from `NPM` and you can easily install them with `npm i @taquito/taquito @taquito/beacon-wallet`. At the top of the main component of the dapp, we can now import two classes we need for our dapp, the `TezosToolkit` from the `Taquito` package and the `BeaconWallet` from the `BeaconWallet` package:
 
@@ -37,7 +39,7 @@ From the `Taquito` package, we need the `TezosToolkit` to communicate with the T
 
 > Note: you don’t need to install the `Beacon SDK` package yourself, it is part of the `BeaconWallet` package and will already be present in your `node_modules` folder.
 
-## Setting up the environment on mount <a id="c311"></a>
+### Setting up the environment on mount <a id="c311"></a>
 
 When the users will first visit the dapp, we have to set up the dapp environment to make sure it connects to the Tezos blockchain and the user’s wallet properly. Svelte has a built-in function called `onMount` that is triggered once when the app is mounted. We will set up the dapp within this function:
 
@@ -75,7 +77,7 @@ The tickets are stored as values of the `bigmap` and are associated with a key r
 
 After getting the timestamp and the ticket from the `bigmap`, we can save them in variables to use them in the interface.
 
-## Connecting and disconnecting the wallet <a id="3710"></a>
+### Connecting and disconnecting the wallet <a id="3710"></a>
 
 The first time the users will visit your dapp, they will need to connect their wallet. The above example of the code connecting the wallet on mount only applies to returning users, so we have to offer a solution for our first-time users to connect their wallet.
 
@@ -117,7 +119,7 @@ We should also allow our users to manually disconnect their wallet \(for example
 
 ![](../../.gitbook/assets/image (5).png)
 
-## Buying tickets <a id="08dc"></a>
+### Buying tickets <a id="08dc"></a>
 
 Setting up the dapp and the wallet is actually the most complex part of the code, buying and redeeming tickets is going to be a breeze!
 
@@ -157,7 +159,7 @@ The users’ tickets are stored in the `tickets` bigmap so we just need to use t
 
 Now that our users can buy tickets, let’s give them the opportunity to redeem them!
 
-## Redeeming tickets <a id="2f0a"></a>
+### Redeeming tickets <a id="2f0a"></a>
 
 Redeeming tickets is going to be a pretty straightforward operation: you provide the type of tickets you want to redeem and the contract uses the sender’s address to decrement their balance. A limit of one ticket is hardcoded in the contract so we won’t handle the number of tickets to redeem from the dapp. Just like buying tickets, the entrypoint we need to call is a method available in the `methods` property of the contract abstraction:
 
@@ -170,7 +172,7 @@ This function should look familiar, as it is very similar to the one to buy tick
 3. Once included, we fetch the new storage by calling `storage` on the ticketer contract abstraction
 4. To finish, we load the user’s new balance and save it in a variable to be displayed in the interface.
 
-## Conclusion <a id="1b80"></a>
+### Conclusion <a id="1b80"></a>
 
 This was a long tutorial, but it introduced you to the basics of creating a dapp on Tezos: communicating with the blockchain using `Taquito`, connecting to the users’ wallets using `Beacon`, sending transactions and fetching a contract storage. This is all you need to create a simple dapp.
 

@@ -1,20 +1,22 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 1
+title: "Setting up a Tezos Baker"
+hide_title: true
 ---
-# Setting up a Tezos Baker
+## Setting up a Tezos Baker
 
-## Baking with Kiln
+### Baking with Kiln
 
 [Kiln](https://tezos-kiln.org) is a GUI-based tool for baking on the Tezos blockchain through an easy-to-use UI. Installing Kiln on MacOS, Ubuntu, and other Debian Linux distributions intends to be straightforward, intuitive, and does not require the use of the command line.
 
-### Key Resources
+#### Key Resources
 
 * [Kiln homepage](https://Tezos-kiln.org)
 * [How to install Kiln on MacOS Catalina](https://medium.com/tezos-kiln/how-to-install-kiln-on-macos-catalina-ce0821f97dcf)
 * [How to Install Kiln Ubuntu](https://medium.com/kiln/how-to-install-kiln-and-bake-on-ubuntu-a13d17df63c)
 
-## Baking from the CLI
+### Baking from the CLI
 
 First, let's make sure you have the minimum requirements to run a node on your PC. It takes about 15 minutes to setup a node, just follow the step-by-step instructions and you will be be Baking in no time. Additionally, you can bake using an application called Kiln, in which you can easily setup a Baker through the GUI, but first let's go through the traditional route using command line.
 
@@ -157,13 +159,13 @@ On Catalina you may see the following error if you have xcode installed:
 
 You are now ready to go ahead and install the node from the instructions above!
 
-### Do I need to sync the whole blockchain to set up a node?
+#### Do I need to sync the whole blockchain to set up a node?
 
 **Fast sync from a mainnet snapshot**
 
 No! You don't need to sync the entire blockchain, a snapshot will allow you to sync the chain in a few minutes, when setting up a new node you will by default download the entire history of the chain. You can skip this section if you are not starting from a snapshot and syncing the full chain. If you do start a node from a snapshot then an up-to-date snapshot can be downloaded from [Tezos Giganode](https://snapshots-tezos.giganode.io). An imported up-to-date snapshot will bring the disk space down from 50GB to 12GB
 
-### How do I particpate in the on-chain voting as Baker?
+#### How do I particpate in the on-chain voting as Baker?
 
 **Voting**
 

@@ -1,9 +1,11 @@
 ---
 sidebar_position: 2
 hide_table_of_contents: true
+title: "Testnets"
+hide_title: true
 ---
 
-# Testnets
+## Testnets
 
 In the blockchain ecosystem, testnets are considered to be entirely separate networks that are used for testing purposes. As such, testnet tokens allow developers to build and test their applications all without risking any monetary value. 
 

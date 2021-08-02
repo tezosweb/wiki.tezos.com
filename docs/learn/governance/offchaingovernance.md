@@ -1,15 +1,17 @@
 ---
 sidebar_position: 3
 hide_table_of_contents: true
+title: "Off-chain Governance"
+hide_title: true
 ---
 
-# Off-chain Governance
+## Off-chain Governance
 
-## Off-chain governance <a id="offchain"></a>
+### Off-chain governance <a id="offchain"></a>
 
 [Tezos Agora](https://www.tezosagora.org) provides off-chain discussion forum and explorer for community members and bakers.
 
-## Arguments for and against on-chain governance <a id="arguments"></a>
+### Arguments for and against on-chain governance <a id="arguments"></a>
 
 To get a sense of the various arguments for and against on-chain governance, here is a good list of resources to understand the different viewpoints:
 

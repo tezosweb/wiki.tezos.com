@@ -1,7 +1,9 @@
 ---
 hide_table_of_contents: true
+title: "Uses of Tezos"
+hide_title: true
 ---
-# Uses of Tezos
+## Uses of Tezos
 
 Tezos \(the tez\) is a currency first, a smart contract platform second. Tezos is smart money, redefining what it means to hold and exchange value in a digitally connected world. A self-upgradable blockchain with a proven track record, Tezos seamlessly adopts tomorrow's innovations without network disruptions today. 
 

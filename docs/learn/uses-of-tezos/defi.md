@@ -1,9 +1,11 @@
 ---
 sidebar_position: 1
 hide_table_of_contents: true
+title: "Decentralized Finance (DeFi)"
+hide_title: true
 ---
 
-# Decentralized Finance (DeFi)
+## Decentralized Finance (DeFi)
 
 **Introduction to Decentralized Finance**
 

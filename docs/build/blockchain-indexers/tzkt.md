@@ -1,8 +1,10 @@
 ---
 sidebar_position: 1
 hide_table_of_contents: true
+title: "TzKT"
+hide_title: true
 ---
-# TzKT
+## TzKT
 
 We have talked about how a blockchain includes a lot of transactions and information. Working directly on the whole blockchain to fetch and process data will be time consuming. 
 

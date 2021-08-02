@@ -1,9 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 1
+title: "ꜩ Tezos Wallets"
+hide_title: true
 ---
 
-# ꜩ Tezos Wallets
+## ꜩ Tezos Wallets
 
 The following wallets have undergone at least one independent external security audit:
 

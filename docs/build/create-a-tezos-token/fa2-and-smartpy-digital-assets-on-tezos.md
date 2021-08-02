@@ -1,12 +1,14 @@
 ---
 sidebar_position: 1
 hide_table_of_contents: true
+title: "FA2 & SmartPy - Digital Assets on Tezos"
+hide_title: true
 ---
-# FA2 & SmartPy - Digital Assets on Tezos
+## FA2 & SmartPy - Digital Assets on Tezos
 
 This tutorial shows how to interact with the “FA2-SmartPy” implementation of the FA2 standard on some common use-cases. The first part uses `tezos-client` commands to operate basic transfers and queries. The second part goes further: it uses the `fatoo` command line interface to do batched-transfers and use the “operator” mechanism to delegate transfer rights.
 
-## Basic Usage With tezos-client
+### Basic Usage With tezos-client
 
 This assumes you have `tezos-client` properly set up to talk to Carthagenet or to a “full” [sandbox](https://assets.tqtezos.com/docs/setup/2-sandbox) \(i.e. with bakers\).
 
@@ -29,7 +31,7 @@ In the case of the sandbox tutorial we use `alice` also as `originator` and `adm
                 --force
 ```
 
-### Get The Michelson Code
+#### Get The Michelson Code
 
 FA2-SmartPy uses SmartPy's meta-programming facilities to provide more than one Michelson contract, a.k.a. _“builds.”_. A few of the builds are available at [https://gitlab.com/smondet/fa2-smartpy/-/tree/master/michelson](https://gitlab.com/smondet/fa2-smartpy/-/tree/master/michelson), see [below] for a description of the various builds.
 
@@ -41,7 +43,7 @@ Let's download the “default” one:
 
 ```
 
-### Origination
+#### Origination
 
 Origination works like for any contract, we need the above code, a few ꜩ, and a michelson expression to initialize the storage. In our case, it should look like:
 
@@ -83,7 +85,7 @@ Let's originate such an unpaused empty contract while setting the `administrator
 ┃ Contract memorized as myfa2.
 ```
 
-### Mint
+#### Mint
 
 Here we want to make a transfer “as” the `administrator` set in the previous section.
 
@@ -122,7 +124,7 @@ For instance, let's, as `administrator`, mint 100 `TK0` tokens to `alice`:
 ┃ and/or an external block explorer.
 ```
 
-### Transfer
+#### Transfer
 
 The transfer entry-point in FA2 is “batched” at two levels i.e. one contract call contains a list of transfer elements, each transfer element is a “from-address” and a list of outgoing transactions:
 
@@ -162,7 +164,7 @@ Here we, as `alice`, transfer 5 of our 100 TK0 to `bob`:
 ┃ and/or an external block explorer.
 ```
 
-### Get Balance Off-Chain
+#### Get Balance Off-Chain
 
 As an example of interaction with big-maps in the contract's storage using Michelson and `tezos-client`, here we obtain `alice`'s balance of TK0 tokens.
 
@@ -216,9 +218,9 @@ In this case, we expect the `tezos-client` command to fail, since we want to rea
 
 We can _clearly_ see in the error value \(passed to `FAILWITH`\) that `alice`'s balance is 95 TK0 \(100 minted _minus_ 5 transferred to `bob`\).
 
-## The `fatoo` Application
+### The `fatoo` Application
 
-### Obtain and Setup Client
+#### Obtain and Setup Client
 
 In this section we use the `fatoo` command line interface to some _builds_ of FA2-SmartPy. You need `fatoo` installed in your `$PATH` or you may use Docker:
 
@@ -268,7 +270,7 @@ The application has a `client` subcommand which just calls `tezos-client` proper
 ┃ Node is bootstrapped.
 ```
 
-### Setup Accounts
+#### Setup Accounts
 
 Here we create four key-pairs from mnemonic seeds, to be used in the following sections:
 
@@ -311,7 +313,7 @@ Let's name all of these:
 
 ```
 
-### Originate
+#### Originate
 
 The application contains the code for a few variants of the contract:
 
@@ -371,7 +373,7 @@ And we can already display the state of the contract \(storage\):
 ‖     Known-Owners-and-Operators: None
 ```
 
-### Mint and Multi-Transfer
+#### Mint and Multi-Transfer
 
 In order to mint tokens, the administrator needs to be able to call the contract on chain, for this we need to transfer at least a few μꜩ to that address. One can use `tezos-client` but `fatoo` has shortcut command to transfer from the configured “funding” account \(amounts are in `mutez`\):
 
@@ -474,7 +476,7 @@ We can then observe the resulting state:
 ‖         - Balance: 10 TQ1(1)
 ```
 
-### Using Operators
+#### Using Operators
 
 Let's create an `operator` key-pair:
 
@@ -604,7 +606,7 @@ We can then observe the resulting state where all the balances are `0` except fo
 ‖         - Balance: 2000 TQ1(1)
 ```
 
-### Retrieve The Contract's Balance
+#### Retrieve The Contract's Balance
 
 The build of the contract we originated above has an extra entry-point to be able to transfer the balance of the contract, e.g. in case somebody accidentally transfers μꜩ to the contract.
 
@@ -696,7 +698,7 @@ We see that the balance is gone from the KT1:
 ‖ Warning:  the --addr --port --tls options are now deprecated; use --endpoint instead
 ```
 
-## Further Reading
+### Further Reading
 
 Hopefully this tutorial introduced the FA2-SmartPy implementation of FA2 from a user's perspective. Please provide any feedback using the repository's [issues](https://gitlab.com/smondet/fa2-smartpy/-/issues). Further reading includes:
 

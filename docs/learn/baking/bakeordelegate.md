@@ -1,14 +1,16 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 3
+title: "Should I bake or delegate?"
+hide_title: true
 ---
-# Should I bake or delegate?
+## Should I bake or delegate?
 
-## Should I bake or delegate? <a id="bakeordelegate"></a>
+### Should I bake or delegate? <a id="bakeordelegate"></a>
 
 Self-baking lets a baker earn a higher yield, but requires technical expertise and time in setting up a baker and running the baking software reliably with as little downtime as possible. By delegating Tezos tokens, a token holder avoids this process altogether but usually earns a lower yield. In the current protocol, token holders with less than 8,000 XTZ can only participate in baking by delegating to another baker.
 
-## How much can I earn by baking or delegating? <a id="earn"></a>
+### How much can I earn by baking or delegating? <a id="earn"></a>
 
 The current Tezos protocol increases the token supply by approximately 5.51% in the first year \(based on constant block rewards of 16 XTZ/block and 2 XTZ/endorsement\).
 
@@ -16,7 +18,7 @@ This means that if **all** Tezos token holders bake with all of their tokens \(i
 
 In practice, the rewards for token holders who delegate are less than that of baking directly, because delegates share only part of their baking rewards with delegators. The portion they keep is often called a “fee” and ranges between 5% and 20%, varying by the baker.
 
-## How should I select a baker to delegate with? <a id="bakerselection"></a>
+### How should I select a baker to delegate with? <a id="bakerselection"></a>
 
 [Baking Bad](https://baking-bad.org/docs/where-to-stake-tezos) or [Tezos Nodes](https://tezos-nodes.com/) allow you to browse through bakers. There are a few factors to consider when choosing a baker to delegate with:
 

@@ -1,9 +1,11 @@
 ---
 sidebar_position: 3
 hide_table_of_contents: true
+title: "Tokenization"
+hide_title: true
 ---
 
-# Tokenization
+## Tokenization
 
 **Introduction to Tokenization**
 

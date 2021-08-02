@@ -1,8 +1,10 @@
 ---
 hide_table_of_contents: true
+title: "Blockchain Indexers"
+hide_title: true
 ---
 
-# Blockchain Indexers
+## Blockchain Indexers
 
 ### What is an indexer?
 

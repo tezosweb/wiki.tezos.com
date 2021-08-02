@@ -1,18 +1,20 @@
 ---
 hide_table_of_contents: true
+title: "Intro to Tezos"
+hide_title: true
 ---
 
-# Intro to Tezos
+## Intro to Tezos
 
-## What is Tezos? <a id="xtz"></a>
+### What is Tezos? <a id="xtz"></a>
 
 Tezos is an open-source, community-governed, blockchain network capable of running complex smart contracts for asset settlement and decentralized applications \(dApps\) which benefit from censorship resistance, decentralization, and user-control.
 
-## What is XTZ? <a id="xtz"></a>
+### What is XTZ? <a id="xtz"></a>
 
 XTZ, tez, or ꜩ \(`\ua729`, "Latin small letter tz"\) is the native currency of Tezos.
 
-## What makes Tezos unique? <a id="unique"></a>
+### What makes Tezos unique? <a id="unique"></a>
 
 1. **Self-Amendment and Upgradability**
 
@@ -40,7 +42,7 @@ XTZ, tez, or ꜩ \(`\ua729`, "Latin small letter tz"\) is the native currency of
 
    Formal verification allows developers to mathematically prove that code performs correctly, according to its formal specification or certain properties. This is well-suited to financial smart contracts representing significant real-world value \(e.g. tokenized assets, loans, etc.\), which require guarantees that funds will not be lost or frozen due to bugs in the code.
 
-## Why formal governance? <a id="shortcomings"></a>
+### Why formal governance? <a id="shortcomings"></a>
 
 **Decentralized blockchain networks \(and most open source software\) face inherent challenges with sustainability, upgradability, and incentive alignment:**
 

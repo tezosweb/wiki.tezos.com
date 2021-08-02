@@ -1,8 +1,10 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 2
+title: "Tezos Energy Consumption"
+hide_title: true
 ---
-# Tezos Energy Consumption
+## Tezos Energy Consumption
 
 The energy consumption of Bitcoin, Ethereum, and other Proof of Work-based blockchain networks has become a popular [topic](https://www.wired.com/story/nfts-hot-effect-earth-climate/) [of](https://mashable.com/article/nft-cryptocurrency-bad-environment-art/) [discussion](https://earther.gizmodo.com/how-to-fix-crypto-art-nfts-carbon-pollution-problem-1846440312) in recent weeks.
 

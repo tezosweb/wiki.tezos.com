@@ -1,9 +1,11 @@
 ---
 sidebar_position: 1
 hide_table_of_contents: true
+title: "Privacy"
+hide_title: true
 ---
 
-# Privacy
+## Privacy
 
 Transactions in blockchains are public by default. A company may not want its past transactions to be a matter of public record, thus solutions to make transactions completely private are important for user adoption. To introduce privacy-preserving transactions, developers in the blockchain ecosystem have offered up many competing solutions with different trade-offs and benefits such as Bulletproofs, Ring Signatures and Zero-knowledge proofs.
 

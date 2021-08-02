@@ -1,9 +1,11 @@
 ---
 sidebar_position: 3
 hide_table_of_contents: true
+title: "LIGO"
+hide_title: true
 ---
 
-# LIGO
+## LIGO
 
 [LIGO](https://ligolang.org) is a programming language for Tezos with support for different syntaxes:
 

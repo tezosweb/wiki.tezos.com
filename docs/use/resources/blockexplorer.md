@@ -1,8 +1,10 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 2
+title: "Block Explorers"
+hide_title: true
 ---
-# Block Explorers
+## Block Explorers
 
 * [TZKT](https://tzkt.io)
 * [Better Call Dev - "Michelson Contract Explorer"](https://better-call.dev/)

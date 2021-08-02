@@ -1,21 +1,23 @@
 ---
 sidebar_position: 2
 hide_table_of_contents: true
+title: "Non-Fungible Tokens on Tezos Using FA2 · Digital Assets on Tezos"
+hide_title: true
 ---
 
-# Non-Fungible Tokens on Tezos Using FA2 · Digital Assets on Tezos
+## Non-Fungible Tokens on Tezos Using FA2 · Digital Assets on Tezos
 
 This tutorial shows how to originate and interact with the FA2 NFT contract implementation. The tutorial uses a pre-compiled FA2 NFT contract written in [LIGO](https://ligolang.org/) smart contract language and a command line interface \(CLI\) to originate and interact with the NFT contracts either on the [Flextesa](https://tezos.gitlab.io/flextesa/) sandbox or Tezos testnet \(Carthagenet\).
 
 **Disclaimer:** We highly recommend users read the additional resources above and take necessary precautions before following this tutorial and interacting with experimental technology. Use this tutorial at your own risk.
 
-## Introduction
+### Introduction
 
-### What is FA2 \(TZIP-12\)?
+#### What is FA2 \(TZIP-12\)?
 
 FA2 refers to a token standard \([TZIP-12](https://gitlab.com/tzip/tzip/-/blob/master/proposals/tzip-12/tzip-12.md)\) on Tezos. FA2 proposes a unified token contract interface, supporting a wide range of token types. The FA2 provides a standard API to transfer tokens, check token balances, manage operators \(addresses that are permitted to transfer tokens on behalf of the token owner\) and manage token metadata.
 
-### What is a Non-Fungible Token \(NFT\)?
+#### What is a Non-Fungible Token \(NFT\)?
 
 An NFT \(non-fungible token\) is a special type of cryptographic token which represents something unique; non-fungible tokens are thus not mutually interchangeable. NFTs can represent ownership over digital or physical assets like virtual collectibles or unique artwork.
 
@@ -23,14 +25,14 @@ For each individual non-fungible token, the FA2 assigns a unique token ID and as
 
 The FA2 contract also associates some metadata with each token. This tutorial supports token symbol and token name metadata attributes. However, the implementation can be easily extended to support custom metadata attributes such as an associated image or document URL and its crypto-hash.
 
-## Tutorial
+### Tutorial
 
-### Prerequisites
+#### Prerequisites
 
 * [Node.js](https://nodejs.org/) must be installed. The Node installation must also include `npm` \(Node package manager\).
 * [Docker](https://www.docker.com/) must be installed. You need docker to run Flextesa sandbox. You might skip docker installation if you plan to run this tutorial on the testnet \(Carthagenet\) only.
 
-### The CLI Tool
+#### The CLI Tool
 
 You will need to install `tznft` CLI tool. After the installation, you can invoke various commands in the form of `tznft [options]`. `tznft` provides the following commands:
 
@@ -47,7 +49,7 @@ $ tznft --help
 
 to list all available commands.
 
-### Initial Setup
+#### Initial Setup
 
 1. Create a new local directory to keep your tutorial configuration:
 
@@ -102,7 +104,7 @@ to list all available commands.
 
    The default configuration comes with two account aliases `bob` and `alice` that can be used for token minting and transferring.
 
-### Mint NFT Token\(s\)
+#### Mint NFT Token\(s\)
 
 This tutorial uses an NFT collection contract. Each time the user mints a new set \(collection\) of tokens, a new NFT contract is created. The user cannot add more tokens or remove \(burn\) existing tokens within the contract. However tokens can be transferred to other owners.
 
@@ -124,11 +126,11 @@ originating new NFT contract...
 originated NFT collection KT1XP3RE6S9t44fKR9Uo5rAfqHvHXu9Cy7fh
 ```
 
-### Inspecting The NFT Contract
+#### Inspecting The NFT Contract
 
 Using `KT1..` address of the NFT contract created by the `mint` command, we can inspect token metadata and balances \(i. e. which addresses own the tokens\).
 
-#### Inspect Token Metadata
+##### Inspect Token Metadata
 
 `show-meta` command requires the following parameters:
 
@@ -149,7 +151,7 @@ token_id: 0 symbol: T1  name: My Token One  extras: { }
 token_id: 1 symbol: T2  name: My Token Two  extras: { }
 ```
 
-#### Inspect Token Balances
+##### Inspect Token Balances
 
 `show-balance` command requires the following parameters:
 
@@ -184,7 +186,7 @@ owner: tz1VSUr8wwNhLAzempoch5d6hLRiTh8Cjcjb token: 0    balance: 0
 owner: tz1VSUr8wwNhLAzempoch5d6hLRiTh8Cjcjb token: 1    balance: 0
 ```
 
-### Tokens With External Metadata
+#### Tokens With External Metadata
 
 Token metadata can store a reference to some external document and/or image. This tutorial supports storing external data on [IPFS](https://ipfs.io/) and keeping an IPFS hash as a part of the token metadata.
 
@@ -211,7 +213,7 @@ token_id: 0 symbol: TZT name: Tezos Token   extras: { ipfs_cid=QmRyTc9KbD7ZSkmEf
 
 1. You can inspect the file on the web by opening a URL `https://ipfs.io/ipfs/`. For our example, the URL would be [https://ipfs.io/ipfs/QmRyTc9KbD7ZSkmEf4e7fk6A44RPciW5pM4iyqRGrhbyvj](https://ipfs.io/ipfs/QmRyTc9KbD7ZSkmEf4e7fk6A44RPciW5pM4iyqRGrhbyvj)
 
-### Transferring Tokens
+#### Transferring Tokens
 
 `transfer` command requires the following parameters:
 
@@ -250,7 +252,7 @@ owner: tz1VSUr8wwNhLAzempoch5d6hLRiTh8Cjcjb token: 0    balance: 1
 owner: tz1VSUr8wwNhLAzempoch5d6hLRiTh8Cjcjb token: 1    balance: 1
 ```
 
-### Operator Transfer
+#### Operator Transfer
 
 It is also possible to transfer tokens on behalf of the owner.
 
@@ -316,11 +318,11 @@ owner: tz1VSUr8wwNhLAzempoch5d6hLRiTh8Cjcjb token: 1    balance: 0
 
 Token `1` now belongs to `bob`.
 
-### Configuration
+#### Configuration
 
 `tznft` can be configured to interact with different Tezos networks. The user can also configure address aliases to sign Tezos operations and/or use them as command parameters when addresses are required. The default configuration that is created by `tznft init-config` command includes two pre-configured networks: `sandbox` and `testnet` \(Carthagenet\). Each pre-configured network has two bootstrap aliases: `bob` and `alice`.
 
-#### Network Configuration Commands
+##### Network Configuration Commands
 
 * `set-network` select specified pre-configured network as an active one. All subsequent commands will operate on the active network
 
@@ -376,7 +378,7 @@ If you are using `testnet`, your originated contracts will remain on the blockch
 
 _Note: Although `testnet` configuration already has two bootstrap aliases `bob` and `alice`, it is a good practice to create your own alias from the faucet file \(see `tznft add-alias-faucet` command described below\) and use it as a signer for the commands like `mint`, `transfer` and `show_balance`. In this way, your Tezos operations will not interfere with the operations initiated by other users._
 
-#### Alias Configuration Commands
+##### Alias Configuration Commands
 
 `tznft` allows user to configure and use short names \(aliases\) instead of typing in full Tezos addresses when invoking `tznft` commands. Each network comes with two pre-configured aliases `bob` and `alice`. The user can manage aliases by directly editing `tznft.json` file or using the following commands:
 

@@ -1,8 +1,10 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 6
+title: "Other"
+hide_title: true
 ---
-# Other
+## Other
 
 * [Tezos Domains](https://tezos.domains/%20)
 

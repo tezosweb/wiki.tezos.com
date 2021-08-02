@@ -73,17 +73,7 @@ function Navbar() {
       })}>
       <div className="navbar__inner">
         <div className="navbar__items">
-          {items != null && items.length !== 0 && (
-            <button
-              aria-label="Navigation bar toggle"
-              className="navbar__toggle clean-btn"
-              type="button"
-              tabIndex={0}
-              onClick={showSidebar}
-              onKeyDown={showSidebar}>
-              <IconMenu />
-            </button>
-          )}
+         
           <Logo
             className="navbar__brand"
             imageClassName="navbar__logo"
@@ -92,6 +82,7 @@ function Navbar() {
           {leftItems.map((item, i) => (
             <NavbarItem {...item} key={i} />
           ))}
+           
         </div>
         <div className="navbar__items navbar__items--right">
           {rightItems.map((item, i) => (
@@ -103,6 +94,17 @@ function Navbar() {
               checked={isDarkTheme}
               onChange={onToggleChange}
             />
+          )}
+          {items != null && items.length !== 0 && (
+            <button
+              aria-label="Navigation bar toggle"
+              className="navbar__toggle clean-btn"
+              type="button"
+              tabIndex={0}
+              onClick={showSidebar}
+              onKeyDown={showSidebar}>
+              <IconMenu />
+            </button>
           )}
           {!hasSearchNavbarItem && <SearchBar />}
         </div>

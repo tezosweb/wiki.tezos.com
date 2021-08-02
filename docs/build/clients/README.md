@@ -1,9 +1,11 @@
 ---
 hide_table_of_contents: true
+title: "Tezos Clients"
+hide_title: true
 ---
-# Tezos Clients
+## Tezos Clients
 
-## CLI and RPC
+### CLI and RPC
 
 ### Connecting to the network
 

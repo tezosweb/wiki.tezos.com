@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Layer 2"
+hide_title: true
 hide_table_of_contents: true
 description: >-
   What is Self Amendment?Tezos is a self-amending blockchain network that
@@ -7,9 +9,9 @@ description: >-
   activating protocol upgrades without the need to hard
 ---
 
-# Layer 2
+## Layer 2
 
-## zkRollups
+### zkRollups
 
 zkRollups are a means of achieving higher transaction throughput by batching up to thousands of transactions into a single “rollup” which is included in L1 blocks. The fidelity of the rollup can be secured in various ways. Either through greater hardware requirements with standard rollups \(ZKRU\) or economic incentives, a variant known as optimistic rollups \(ORU\).  
   
@@ -23,7 +25,7 @@ The Tezos protocol can host multiple rollup implementations and designs. Some ca
 
 zkRollups are being explored and developed by [Nomadic Labs](https://gitlab.com/nomadic-labs/privacy-team/-/tree/master/rollup%20) and [Marigold](https://marigold.dev/projects/).
 
-## zkChannels
+### zkChannels
 
 zkChannels is a Lightning-like protocol that enables scalable and anonymous off-chain transactions using a combination of commitments, blind signatures and efficient zero-knowledge proof techniques \(in addition to multi-party computation techniques\). In particular, for Tezos, zkChannels rely on a randomizable blind signature scheme with efficient zero-knowledge protocols. The randomizable signature scheme is based on [Pointcheval-Sanders \(PS\)](https://eprint.iacr.org/2015/525.pdf) and instantiated on the BLS12-381 curve as well.
 
@@ -35,7 +37,7 @@ All payments must be initiated by the customer and the anonymous channels are bi
 
 zkChannels is still being actively developed, led by [Bolt Labs, Inc](https://boltlabs.tech).
 
-## Randomness
+### Randomness
 
 PVSS and VDFs have both been discussed as ways to improve randomness in Tezos.
 
@@ -50,7 +52,7 @@ New cryptographic techniques such as [VDFs](https://eprint.iacr.org/2018/601.pdf
 
 [VDF ASIC research](https://vdfresearch.org/) is underway, led by Filecoin and the Ethereum Foundation.
 
-## Mempool management
+### Mempool management
 
 One [discussed change](https://medium.com/tezos/a-few-directions-to-improve-tezos-15359c79ec0f) to mempool management is expected to increase throughput by 2-3x. This would entail including a transactions in a block based on whether its fee can be paid, without computing its effects. Invalid transactions would be included and treated as nops, as already done in Tezos.
 

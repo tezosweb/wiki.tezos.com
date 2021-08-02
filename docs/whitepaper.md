@@ -1,12 +1,14 @@
 ---
 sidebar_position: 1
 hide_table_of_contents: true
+title: "Tezos White Paper"
+hide_title: true
 ---
-# Tezos White Paper
+## Tezos White Paper
 
 \_\_[_Whitepaper PDF_](https://tezos.com/whitepaper.pdf)\_\_
 
-#### Table of Contents
+##### Table of Contents
 
 * [Self-Amending Cryptoledger](#self-amending)
 * [Mathematical Representation](#mathematical)
@@ -16,11 +18,11 @@ hide_table_of_contents: true
 * [Smart Contracts](#smart)
 * [Conclusion](#conclusion)
 
-## Introduction <a id="introduction"></a>
+### Introduction <a id="introduction"></a>
 
 In the first part of this paper, we will discuss the concept of abstract blockchains and the implementation of a self-amending crypto-ledger. In the second part, we will describe our proposed seed protocol.
 
-## Self-amending Cryptoledger <a id="self-amending"></a>
+### Self-amending Cryptoledger <a id="self-amending"></a>
 
 A blockchain protocol can be decomposed into three distinct protocols:
 
@@ -30,7 +32,7 @@ A blockchain protocol can be decomposed into three distinct protocols:
 
 Tezos implements a generic network shell. This shell is agnostic to the transaction protocol and to the consensus protocol. We refer to the transaction protocol and the consensus protocol together as a "blockchain protocol". We will first give a mathematical representation of a blockchain protocol and then describe some of the implementation choices in Tezos.
 
-## Mathematical representation <a id="mathematical"></a>
+### Mathematical representation <a id="mathematical"></a>
 
 A blockchain protocol is fundamentally a monadic implementation of concurrent mutations of a global state. This is achieved by defining "blocks" as operators acting on this global state. The free monoid of blocks acting on the genesis state forms a tree structure. A global, canonical, state is defined as the minimal leaf for a specified ordering.
 
@@ -50,7 +52,7 @@ The networking protocol is fundamentally identical for these blockchains. "Minin
 
 In Tezos, we make a blockchain protocol introspective by letting blocks act on the protocol itself. We can then express the set of protocols recursively as $$\mathcal{P} = \left\{\left(\mathbf{S},\leq,\oslash,\mathbf{B} \subset \mathbf{S}^{(\mathbf{S} \times \mathcal{P})\cup \{\oslash\}} \right)\right\}$$
 
-## The network shell <a id="network"></a>
+### The network shell <a id="network"></a>
 
 This formal mathematical description doesn't tell us _how_ to build the block tree. This is the role of the network shell, which acts as an interface between a gossip network and the protocol.
 
@@ -58,11 +60,11 @@ The network shell works by maintaining the best chain known to the client. It is
 
 The most arduous part of the network shell is to protect nodes against denial-of-service attacks.
 
-#### Clock
+##### Clock
 
 Every block carries a timestamp visible to the network shell. Blocks that appear to come from the future are buffered if their timestamps are within a few minutes of the system time and rejected otherwise. The protocol design must tolerate reasonable clock drifts in the clients and must assume that timestamps can be falsified.
 
-#### Chain selection algorithm
+##### Chain selection algorithm
 
 The shell maintains a single chain rather than a full tree of blocks. This chain is only overwritten if the client becomes aware of a strictly better chain.
 
@@ -72,15 +74,15 @@ Yet, it remains possible for a node to lie about the score of a given chain, a l
 
 Fortunately, a protocol can have the property that low scoring chains exhibit a low rate of block creation. Thus, the client would only consider a few blocks of a "weak" fork before concluding that the announced score was a lie.
 
-#### Network level defense
+##### Network level defense
 
 In addition, the shell is "defensive". It attempts to connect to many peers across various IP ranges. It detects disconnected peers and bans malicious nodes.
 
 To protect against certain denial of service attacks, the protocol provides the shell with context dependent bounds on the size of blocks and transactions.
 
-### Functional representation
+#### Functional representation
 
-#### Validating the chain
+##### Validating the chain
 
 We can efficiently capture almost all the genericity of our abstract blockchain structure with the following OCaml types. To begin with, a block header is defined as:
 
@@ -146,7 +148,7 @@ The apply function is the heart of the protocol:
 * When it is passed a block header and the associated list of operations, it computes the changes made to the context and returns a modified copy. Internally, only the difference is stored, as in a versioning system, using the block's hash as a version handle.
 * When it is only passed a list of operations, it greedily attempts to apply as many operations as possible. This function is not necessary for the protocol itself but is of great use to miners attempting to form valid blocks.
 
-#### Amending the protocol
+##### Amending the protocol
 
 Tezos's most powerful feature is its ability to implement protocol capable of self-amendment. This is achieved by exposing two procedures functions to the protocol:
 
@@ -170,7 +172,7 @@ These functions are called through the **apply** function of the protocol which 
 
 Many conditions can trigger a change of protocol. In its simplest version, a stakeholder vote triggers a change of protocol. More complicated rules can be progressively voted in. For instance, if the stakeholder desire they may pass an amendment that will require further amendments to provide a computer checkable proof that the new amendment respects certain properties. This is effectively and algorithmic check of "constitutionality".
 
-#### RPC
+##### RPC
 
 In order to make the GUI building job's easier, the protocol exposes a JSON-RPC API. The API itself is described by a json schema indicating the types of the various procedures. Typically, functions such as **get\_balance** can be implemented in the RPC.
 
@@ -189,17 +191,17 @@ Note that the call is made on a given context which is typically a recent ancest
 
 The UI itself can be tailored to a specific version of the protocol, or generically derived from the JSON specification.
 
-## Seed protocol
+### Seed protocol
 
 Much like blockchains start from a genesis hash, Tezos starts with a seed protocol. This protocol can be amended to reflect virtually any blockchain based algorithm.
 
-## Economy <a id="economy"></a>
+### Economy <a id="economy"></a>
 
-#### Coins
+##### Coins
 
 We suggest that a single coin be referred to as a "tez" and that the smallest unit simply as a cent. We also suggest to use the symbol ꜩ \(`\ua729`, "Latin small letter tz"\) to represent a tez. During the fundraiser, a total of 763,306,929.69 ꜩ was generated and distributed to the contributors to the fundraiser.
 
-#### Mining and signing rewards
+##### Mining and signing rewards
 
 **Principle**
 
@@ -219,11 +221,11 @@ The reward schedule implies at most a 5.5%. _nominal_ inflation rate. _Nominal_ 
 
 Note that the period of a year is determined from the block's timestamps, not from the number of blocks. This is to remove uncertainty as to the length of the commitment made by miners.
 
-#### Lost coins
+##### Lost coins
 
 If an address is inactive, it will not be selected to create blocks \(which would slow down the consensus algorithm\), and it will not be allowed to vote until it is reactivated \(to avoid uncertainty about participation rate\).
 
-#### Amendment rules
+##### Amendment rules
 
 Amendments are adopted over election cycles lasting $N = 2^{17} = 131072$ blocks each. Given the a one minute block interval, this is about three calendar months. The election cycle is itself divided in four quarters of $2^{15} = 32768$ blocks. This cycle is relatively short to encourage early improvements, but it is expected that further amendments will increase the length of the cycle. Protocol upgrade votes will be much more frequent in the first year in order to allow for rapid iteration. As a security measure, the Tezos foundation will have a veto power expiring after twelve months, until we rule out any kinks in the voting procedure. Adoption requires a certain quorum to be met. This quorum starts at $Q = 80\%$ but dynamically adapts to reflect the average participation. This is necessary if only to deal with lost coins.
 
@@ -247,9 +249,9 @@ Assuming the amendment was approved, it will have been running in the testnet si
 
 We deliberately chose a conservative approach to amendments. However, stakeholders are free to adopt amendments loosening or tightening this policy should they deem it beneficial
 
-## Proof-of-stake mechanism <a id="pos"></a>
+### Proof-of-stake mechanism <a id="pos"></a>
 
-#### Overview
+##### Overview
 
 Our proof-of-stake mechanism is a mix of several ideas, including Slasher\[@Slasher\], chain-of-activity\[@CoA\], and proof-of-burn. The following is a brief overview of the algorithm, the components of which are explained in more details below.
 
@@ -259,13 +261,13 @@ The protocol unfolds in cycles of 4,096 blocks. At the beginning of each cycle, 
 
 _Four cycles of the proof-of-stake mechanism:_ 
 
-#### Clock
+##### Clock
 
 The protocol imposes minimum delays between blocks. In principle, each block can be mined by any stakeholder. However, for a given block, each stakeholder is subject to a random minimum delay. The stakeholder receiving the highest priority may mine the block one minute after the previous block. The stakeholder receiving the second highest priority may mine the block two minutes after the previous block, the third, three minutes, and so on.
 
 This guarantees that a fork where only a small fraction of stakeholder contribute will exhibit a low rate of block creation. If this weren't the case, a CPU denial of service attacks would be possible by tricking nodes into verifying a very long chain claimed to have a very high score.
 
-#### Generating the random seed
+##### Generating the random seed
 
 Every block mined carries a hash commitment to a random number chosen by the miner. These numbers must be revealed in the next cycle under penalty of forfeiting the safety bond. This harsh penalty is meant to prevent selective whitholding of the numbers which could be sued to attack the entropy of the seed.
 
@@ -273,7 +275,7 @@ Malicious miners in the next cycle could attempt to censor such reveals, however
 
 All the revealed numbers in a cycle are combined in a hash list and the seed is derived from the root using the `scrypt` key derivation function. The key derivation should be tuned so that deriving the seed takes on the order of a fraction of a percent of the average validation time for a block on a typical desktop PC.
 
-#### Follow-the-coin procedure
+##### Follow-the-coin procedure
 
 In order to randomly select a stakeholder, we use a follow the coin procedure.
 
@@ -310,7 +312,7 @@ blocks. For instance, an attacker controlling $f = 10\%$ of the rolls should exp
 * The hash from which the seed is derived is an expensive key derivation function, rendering brute-force search impractical.
 * To make linear gains in blocks mined, the attacked needs to expend a quadratically exponential effort.
 
-#### Mining blocks
+##### Mining blocks
 
 The random seed is used to repeatedly select a roll. The first roll selected allows its stakeholder to mine a block after one minute, the second one after two minutes --- and so on.
 
@@ -320,7 +322,7 @@ To avoid a potentially problematic situation were no stakeholder made a safety d
 
 Bonds are implicitely returned to their buyers immediately in any chain where they do not mine the block.
 
-#### Signing blocks
+##### Signing blocks
 
 As it is, we almost have a working proof of stake system. We could define a chain's weight to be the number of blocks. However, this would open the door to a form of selfish mining.
 
@@ -334,11 +336,11 @@ If the highest priority block isn't mined \(perhaps because the miner isn't on l
 
 Conversely, we could imagine an equilibrium where signers panic and start signing the first block they see, for fear that other signers will do so and that a new block will be built immediately. This is however a very contrived situation which benefits no one. There is no incentive for signers to think this equilibrium is likely, let alone to modify the code of their program to act this way. A malicious stakeholder attempting to disrupt the operations would only hurt itself by attempting to follow this strategy, as others would be unlikely to follow suit.
 
-#### Weight of the chain
+##### Weight of the chain
 
 The weight is the number of signatures.
 
-#### Denunciations
+##### Denunciations
 
 In order to avoid the double minting of a block or the double signing of a block, a miner may include in his block a denunciation.
 
@@ -348,9 +350,9 @@ While we could allow anyone to denounce malfeasance, there is really no point to
 
 Once a party has been found guilty of double minting or double signing, the safety bond is forfeited.
 
-## Smart contracts <a id="smart"></a>
+### Smart contracts <a id="smart"></a>
 
-#### Contract type
+##### Contract type
 
 In lieu of unspent outputs, Tezos uses stateful accounts. When those accounts specify executable code, they are known more generally as contracts. Since an account is a type of contract \(one with no executable code\), we refer to both as \"contracts\" in full generality.
 
@@ -383,11 +385,11 @@ type data =
 
 where `INT` is a signed 64-bit integer and string is an array of up to bytes. The storage capacity is limited to bytes, counting the integers as eight bytes and the strings as their length.
 
-#### Origination
+##### Origination
 
 The origination operation may be used to create a new contract, it specifies the code of the contract and the initial content of the contract's storage. If the handle is already the handle of an existing contract, the origination is rejected \(there is no reason for this to ever happen, unless by mistake or malice\).
 
-#### Transactions
+##### Transactions
 
 A transaction is a message sent from one contract to another contract, this messages is represented as:
 
@@ -409,15 +411,15 @@ The transaction also includes the block hash of a recent block that the client c
 
 The pair \(account\_handle, counter\) is roughly the equivalent of an unspent output in Bitcoin.
 
-#### Storage fees
+##### Storage fees
 
 Since storage imposes a cost on the network, a minimum fee of ꜩ 1 is assessed for each byte increase in the storage. For instance, if after the execution of a transaction, an integer has been added to the storage and ten characters have been appended to an existing string in the storage, then ꜩ 18 will be withdrawn from the contract's balance and destroyed.
 
-#### Code
+##### Code
 
 The language is stack based, with high-level data types and primitives and strict static type checking. Its design is insipired by Forth, Scheme, ML and Cat. A full specification of the instruction set is available in\[@language\]. This specification gives the complete instruction set, type system and semantics of the language. It is meant as a precise reference manual, not an easy introduction.
 
-#### Fees
+##### Fees
 
 So far, this system is similar to the way Ethereum handles transaction. However, we differ in the way we handle fees. Ethereum allows arbitrarily long programs to execute by requiring a fee that increases linearly with the program's executing time. Unfortunately, while this does provide an incentive for one miner to verify the transaction, it does not provide such an incentive to other miners, who must also verify this transaction. In practice, most of the interesting programs that can be used for smart contracts are very short. Thus, we simplify the construction by imposing a hard cap on the number of steps we allow the programs to run for.
 
@@ -425,7 +427,7 @@ If the hard cap proves too tight for some programs, they can break the execution
 
 If the account permits, the signature key may be changed by issuing a signed message requesting the change.
 
-## Conclusion <a id="conclusion"></a>
+### Conclusion <a id="conclusion"></a>
 
 We feel we've built an appealing seed protocol. However, Tezos's true potential lies in putting the stakeholders in charge of deciding on a protocol that they feel best serves them.  
 

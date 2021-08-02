@@ -1,9 +1,11 @@
 ---
 sidebar_position: 1
 hide_table_of_contents: true
+title: "Block Explorers"
+hide_title: true
 ---
 
-# Block Explorers
+## Block Explorers
 
 **What is a blockchain explorer?**
 

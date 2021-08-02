@@ -1,10 +1,12 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 5
+title: "NFTs"
+hide_title: true
 ---
-# NFTs
+## NFTs
 
-## Platforms
+### Platforms
 
 * [HEN](https://www.hicetnunc.xyz/%20)
 * [Kalamint](https://kalamint.io/%20)
@@ -14,7 +16,7 @@ sidebar_position: 5
 * [OneOf](https://oneof.com/%20)
 * [Truesy](https://www.truesy.com/%20)
 
-## Projects that offer or create NFT's
+### Projects that offer or create NFT's
 
 * [gif.games](https://gif.games/%20)
 * [Tezos Mandala Art](https://tezos-mandala.art/)

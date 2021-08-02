@@ -27,9 +27,9 @@ function DocPaginator(props) {
             <div className="pagination-nav__icon">
               <ArrowLeft />
             </div>
-            <div className="pagination-nav__label pagination-nav__label_previous">
+            <h3 className="pagination-nav__label pagination-nav__label_previous">
               {metadata.previous.title}
-            </div>
+            </h3>
            
           </Link>
         )}
@@ -37,9 +37,9 @@ function DocPaginator(props) {
       <div className={metadata.next ? 'pagination-nav__item pagination-nav__item--next' : ' pagination-nav__item pagination-nav__hidden' }>
         {metadata.next && (
           <Link className="pagination-nav__link" to={metadata.next.permalink}>
-            <div className="pagination-nav__label pagination-nav__label_next">
+            <h3 className="pagination-nav__label pagination-nav__label_next">
               {metadata.next.title}
-            </div>
+            </h3>
             <div className="pagination-nav__icon">
               <ArrowRight />
             </div>

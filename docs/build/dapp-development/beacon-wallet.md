@@ -1,9 +1,11 @@
 ---
 sidebar_position: 2
 hide_table_of_contents: true
+title: "Beacon Wallet"
+hide_title: true
 ---
 
-# Beacon Wallet
+## Beacon Wallet
 
 Beacon is the implementation of the [tzip-10 proposal](https://gitlab.com/tzip/tzip/tree/master/proposals/tzip-10), which describes an interaction standard between a wallet and a dApp.
 
