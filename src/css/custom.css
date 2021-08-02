@@ -12,7 +12,7 @@
   src: url('/static/GTEestiProDisplay-Regular.woff') format('woff');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600;700;900&display=swap");
 
 :root {
   --ifm-color-primary: #0F61FF;
