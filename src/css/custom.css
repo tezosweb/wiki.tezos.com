@@ -358,3 +358,12 @@ blockquote {
   font-weight: 300;
   line-height: 22px;
 }
+
+.menu .menu__link.menu__link--sublist:after {
+    background-image: url('../../static/img/arrow-pointing-down.svg');
+    background-size: 24px 24px;
+
+}
+.menu__list-item--collapsed .menu__link--sublist:after {
+  transform: rotateZ(0deg) !important;
+}
