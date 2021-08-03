@@ -31,7 +31,9 @@
 .markdown > *:first-child {
   margin-top: -1.5rem !important;
 }
-
+body {
+  overflow-x: hidden !important;
+}
 .markdown > h2:first-child {
   margin-top: 30px !important;
 }
@@ -282,6 +284,19 @@ h5 {
   margin-right: 50px;
   padding: 0 var(--ifm-spacing-horizontal)
 }
+
+@media only screen and ( min-width: 1440px ) {
+  .intro-banner {
+   
+    width: 100vw;
+    position: relative;
+    left: 63.5%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+}  
 @media only screen and (max-width: 600px) {
   .custom-footer-column {
    padding-right: 0;
@@ -295,13 +310,7 @@ h5 {
 
 }
 
-@media only screen and (min-width: 1700px) {
 
-  .intro-banner{
-    margin-left:  -23px;
-    margin-right: -23px;
-  }
-}
 
 @media only screen and (max-width: 997px) {
    .navbar-sidebar {
@@ -375,6 +384,7 @@ h5 {
   .intro-banner {
     margin-left: -60px;
     margin-right: -40px;
+    min-height: unset;
   }
 
 
