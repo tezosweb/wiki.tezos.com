@@ -295,6 +295,14 @@ h5 {
 
 }
 
+@media only screen and (min-width: 1700px) {
+
+  .intro-banner{
+    margin-left:  -23px;
+    margin-right: -23px;
+  }
+}
+
 @media only screen and (max-width: 997px) {
    .navbar-sidebar {
 
@@ -362,6 +370,11 @@ h5 {
   }
   .intro-text h1 {
     padding-top: 0 !important;
+  }
+
+  .intro-banner {
+    margin-left: -60px;
+    margin-right: -40px;
   }
 
 
