@@ -12,8 +12,6 @@ description: >-
 
 ### How to mint NFTs on Tezos using Taquito and Pinata <a id="167b"></a>
 
-[![Claude Barde](https://miro.medium.com/fit/c/96/96/1*0W9TcPUQ1sNbgrEZM9D40Q.jpeg)](https://claudebarde.medium.com/?source=post_page-----15a407078495--------------------------------)
-
 Everybody is talking about NFTs! But a lot of people don’t understand what they are or how they work. Where are they stored? What do they represent? Why do some of them become so expensive? Am I going to become rich if I sell NFTs too? 😄
 
 Although Ethereum was the first blockchain to start the NFT revolution, more and more NFT “minters” are moving to Tezos, attracted by the low gas fees, the robust smart contract platform, and the recent success of [Hic et Nunc](https://www.hicetnunc.xyz/).

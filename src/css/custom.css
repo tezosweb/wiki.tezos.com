@@ -37,9 +37,7 @@
 }
 
 @media (min-width: 997px) {
-  .menu {
-    margin-bottom: 0 !important;
-  }
+  
 
   .sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar-styles-module {
     padding-top: 3.1rem !important;
@@ -229,6 +227,11 @@ h1, h2, h3, .pagination-nav__label, .navbar__title {
   font-family: 'GT Eesti Pro Display' !important;
   font-weight: 400;
 }
+
+
+h5 {
+  font-size: 16px;
+}
 .footer {
   background-color: #1E1E1E;
   padding-top: 4rem;
@@ -310,8 +313,10 @@ h1, h2, h3, .pagination-nav__label, .navbar__title {
     background-color: #0F62FF;
     color: white;
     font-size: 40px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-family: 'GT Eesti Pro Display';
+    font-weight: 400;
   }
 
   .navbar-sidebar__items .navbar-sidebar__items {
@@ -343,7 +348,30 @@ h1, h2, h3, .pagination-nav__label, .navbar__title {
     padding-left: 1.5rem !important;
   }
 
+  h2 {
+    font-size: 32px;
+  }
 
+  .col {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .intro-text {
+    padding: 4rem;
+  }
+  .intro-text h1 {
+    padding-top: 0 !important;
+  }
+
+
+
+}
+
+.menu {
+  padding-top: 24px !important ;
+  padding-bottom: 24px !important; 
+  margin-bottom: 0 !important;
 }
 
 blockquote p {

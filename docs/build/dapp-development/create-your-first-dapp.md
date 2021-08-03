@@ -12,7 +12,6 @@ description: >-
 
 ### How to build your first Tezos dapp \(2021 edition\) <a id="1ce3"></a>
 
-[![Claude Barde](https://miro.medium.com/fit/c/96/96/1*0W9TcPUQ1sNbgrEZM9D40Q.jpeg)](https://claudebarde.medium.com/?source=post_page-----b1263b4ba016--------------------------------)
 
 It’s been more than a year since I wrote [How to build your first dapp on Tezos](https://betterprogramming.pub/build-your-first-dapp-on-tezos-270c568d4fe9). At that time, creating dapps that work with the Tezos blockchain was still in its infancy, it was difficult, the tooling was nonexistent or undocumented and the features limited. There was only a handful of developers who had experience with building apps on Tezos. I started my journey on Tezos at this point when building dapps was hard and I decided to document it in order to help other developers who would come after me.
 
