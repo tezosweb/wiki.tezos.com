@@ -4,8 +4,8 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React, {useState, useCallback} from 'react';
-import {MDXProvider} from '@mdx-js/react';
+import React, { useState, useCallback } from 'react';
+import { MDXProvider } from '@mdx-js/react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import renderRoutes from '@docusaurus/renderRoutes';
 import Layout from '@theme/Layout';
@@ -13,13 +13,13 @@ import DocSidebar from '@theme/DocSidebar';
 import MDXComponents from '@theme/MDXComponents';
 import NotFound from '@theme/NotFound';
 import IconArrow from '@theme/IconArrow';
-import {matchPath} from '@docusaurus/router';
-import {translate} from '@docusaurus/Translate';
+import { matchPath } from '@docusaurus/router';
+import { translate } from '@docusaurus/Translate';
 import clsx from 'clsx';
 import styles from './styles.module.css';
-import {ThemeClassNames, docVersionSearchTag} from '@docusaurus/theme-common';
+import { ThemeClassNames, docVersionSearchTag } from '@docusaurus/theme-common';
 
-function getSidebar({versionMetadata, currentDocRoute}) {
+function getSidebar({ versionMetadata, currentDocRoute }) {
   function addTrailingSlash(str) {
     return str.endsWith('/') ? str : `${str}/`;
   }
@@ -28,7 +28,7 @@ function getSidebar({versionMetadata, currentDocRoute}) {
     return str.endsWith('/') ? str.slice(0, -1) : str;
   }
 
-  const {permalinkToSidebar, docsSidebars} = versionMetadata; // With/without trailingSlash, we should always be able to get the appropriate sidebar
+  const { permalinkToSidebar, docsSidebars } = versionMetadata; // With/without trailingSlash, we should always be able to get the appropriate sidebar
   // note: docs plugin permalinks currently never have trailing slashes
   // trailingSlash is handled globally at the framework level, not plugin level
 
@@ -43,10 +43,10 @@ function getSidebar({versionMetadata, currentDocRoute}) {
   };
 }
 
-function DocPageContent({currentDocRoute, versionMetadata, children}) {
-  const {siteConfig, isClient} = useDocusaurusContext();
-  const {pluginId, version} = versionMetadata;
-  const {sidebarName, sidebar} = getSidebar({
+function DocPageContent({ currentDocRoute, versionMetadata, children }) {
+  const { siteConfig, isClient } = useDocusaurusContext();
+  const { pluginId, version } = versionMetadata;
+  const { sidebarName, sidebar } = getSidebar({
     versionMetadata,
     currentDocRoute,
   });
@@ -129,15 +129,31 @@ function DocPageContent({currentDocRoute, versionMetadata, children}) {
             [styles.docMainContainerEnhanced]:
               hiddenSidebarContainer || !sidebar,
           })}>
-          <div
-            className={clsx(
-              'container padding-top--md padding-bottom--lg',
-              styles.docItemWrapper,
-              {
-                [styles.docItemWrapperEnhanced]: hiddenSidebarContainer,
-              },
-            )}>
-            <MDXProvider components={MDXComponents}>{children}</MDXProvider>
+          <div>
+           { window.location.pathname === "/" && <div className="intro-parent">
+              <div className="intro-banner">
+                <div className="container">
+                  <div className=" col intro-text">
+                    <h1>Welcome to the <span className="gradient">Tezos</span> Wiki!</h1>
+                    <p>The Tezos Wiki is a place to get started and learn about Tezos. It also aims to answer the frequently asked questions about the Tezos protocol & the Tezos ecosystem.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            }
+            <div
+              className={clsx(
+                'container padding-bottom--lg',
+                styles.docItemWrapper,
+                {
+                  [styles.docItemWrapperEnhanced]: hiddenSidebarContainer,
+                },
+              )}>
+
+              <div className="">
+                <MDXProvider components={MDXComponents}>{children}</MDXProvider>
+              </div>
+            </div>
           </div>
         </main>
       </div>
@@ -147,7 +163,7 @@ function DocPageContent({currentDocRoute, versionMetadata, children}) {
 
 function DocPage(props) {
   const {
-    route: {routes: docRoutes},
+    route: { routes: docRoutes },
     versionMetadata,
     location,
   } = props;

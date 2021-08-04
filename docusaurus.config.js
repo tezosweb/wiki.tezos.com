@@ -109,7 +109,7 @@ module.exports = {
           routeBasePath: '/',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/tqtezos/wiki.tezos.com-private/tree/main/subtree',
         },
         blog: {
           showReadingTime: true,
