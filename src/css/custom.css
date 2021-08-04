@@ -287,21 +287,6 @@ h5 {
   padding: 0 var(--ifm-spacing-horizontal)
 }
 
-@media only screen and ( min-width: 1440px ) {
-  .intro-banner {
-    background: radial-gradient(circle, #233456, #272D3D);
-    min-height: 20rem;
-    backdrop-filter: blur(4px);
-    margin-bottom: 60px;
-    width: 100vw;
-    position: relative;
-  }
-
-  .intro-text {
-    margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
-    max-width: var(--ifm-container-width-xl);
-  }
-}  
 @media only screen and (max-width: 600px) {
   .custom-footer-column {
    padding-right: 0;
@@ -387,9 +372,11 @@ h5 {
   }
 
   .intro-banner {
-    margin-left: -60px;
-    margin-right: -40px;
     min-height: unset;
+  }
+
+  .col.footer__col {
+    padding-left: 1.5rem !important;
   }
 
 
