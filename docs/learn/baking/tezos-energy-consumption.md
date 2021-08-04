@@ -16,9 +16,9 @@ By contrast, the energy used annually by validators of the Tezos network is prob
 
 These numbers differ by a factor of **over two million**, between six and seven orders of magnitude.
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image (5).png)
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image (5).png)
 
 Proof of Work networks incentivize miners to produce blocks with a block reward funded via inflation, taxing all holders of the tokens to execute transactions on the network. So long as the tokens appreciate rapidly in value, that inflation-based tax is ignored by the holders; this may no longer be true if appreciation stops.
 
