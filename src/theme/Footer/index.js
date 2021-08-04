@@ -13,7 +13,7 @@ import isInternalUrl from '@docusaurus/isInternalUrl';
 import styles from './styles.module.css';
 import ThemedImage from '@theme/ThemedImage';
 import IconExternalLink from '@theme/IconExternalLink';
-import Logo from '../../../static/img/tezos-logo-large.svg';
+import Logo from '../../../static/img/TezosLogo_Horizontal_White.svg';
 import TwitterLogo from '../../../static/img/twitter-footer.svg';
 import TelegramLogo from '../../../static/img/telegram-footer.svg';
 import RedditLogo from '../../../static/img/reddit-footer.svg';

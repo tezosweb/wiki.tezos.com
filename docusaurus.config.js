@@ -19,8 +19,8 @@ module.exports = {
     navbar: {
       title: '',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/tezos-logo.svg',
+        alt: 'Tezos Logo',
+        src: 'img/TezosLogo_Horizontal_White.svg',
       },
       items: [
         // {
@@ -109,7 +109,7 @@ module.exports = {
           routeBasePath: '/',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/tqtezos/wiki.tezos.com-private/tree/main/subtree',
         },
         blog: {
           showReadingTime: true,
