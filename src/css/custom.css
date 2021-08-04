@@ -42,9 +42,9 @@ body {
 @media (min-width: 997px) {
   
 
-  .sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar-styles-module {
+  /* .sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar-styles-module {
     padding-top: 3.1rem !important;
-  }
+  } */
 }
 
 .docSidebarContainer {
@@ -98,7 +98,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   padding-bottom: 3rem;
   max-width: 800px;
   width: 100%;
-
+  z-index: 103;
 }
 
 .intro-text h1 {
@@ -422,4 +422,10 @@ blockquote {
 }
 .menu__list-item--collapsed .menu__link--sublist:after {
   transform: rotateZ(0deg) !important;
+}
+
+/* Sidebar height fix */
+
+.sidebar_15mo {
+  padding-top: 48px !important;
 }
