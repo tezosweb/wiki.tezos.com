@@ -28,7 +28,7 @@ Without further ado, let’s learn how to build a Tezos dapp 👷👷‍♂️
 
 As mentioned above, the dapp is using two main packages: the `Taquito` package \(to interact with the blockchain\) and the `BeaconWallet` package \(to interact with the user’s wallet\). These packages are available from `NPM` and you can easily install them with `npm i @taquito/taquito @taquito/beacon-wallet`. At the top of the main component of the dapp, we can now import two classes we need for our dapp, the `TezosToolkit` from the `Taquito` package and the `BeaconWallet` from the `BeaconWallet` package:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image31.png)
 
 From the `Taquito` package, we need the `TezosToolkit` to communicate with the Tezos blockchain. From the `BeaconWallet` package, we need the `BeaconWallet` class to interact with the users’ wallets. In addition to that, we are also going to import different things we will need to set up the dapp:
 
@@ -42,26 +42,26 @@ From the `Taquito` package, we need the `TezosToolkit` to communicate with the T
 
 When the users will first visit the dapp, we have to set up the dapp environment to make sure it connects to the Tezos blockchain and the user’s wallet properly. Svelte has a built-in function called `onMount` that is triggered once when the app is mounted. We will set up the dapp within this function:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image11.png)
 
 First, we set up the `TezosToolkit`. Because it is a class, we can create an instance of it with the `new` keyword and we will save it in the Tezos variable \(but you can use whatever variable name you like\). The `TezosToolkit` expects as a parameter the URL of the RPC node you want to connect to. You can use the one in the example or any other one of your choice. Be careful that the node you choose will decide the network you connect to \(here the Florencenet testnet\).
 
 After taking care of the Tezos toolkit, let’s take care of the wallet!
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image30.png)
 
 We create a new instance of the wallet by calling `BeaconWallet` and passing it an object. This object must have at least 1 property called `name` with the name of your dapp \(that’s the name that will be displayed in the wallet when you will ask users to sign transactions\). You should also use the `preferredNetwork` property that allows you to use the Kukai wallet during development. This property takes the name of the network you want to connect to as a value and this is when we can use the `NetworkType` enum.
 
 After the wallet has been instantiated, we are checking if there is already an active wallet, which would mean the users are returning users and we can connect them automatically. The instance of the BeaconWallet has a property `client` with a method called `getActiveAccount` that checks if the users had connected their wallets before. If it is the case, this is what we can do:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image39.png)
 
 * `Tezos.setWalletProvider(wallet)`: this step is necessary to register the newly created wallet and to use it to sign transactions. The argument is an instance of the `BeaconWallet`
 * `userAddress = activeAccount.address`: we get the user’s address which can be useful as much as in the interface \(so the users can know with which address they are connected\) as in the code \(for example, in the following line to fetch the existing tickets\)
 
 After setting up the gears of the dapp, we also want to take care of its main purpose: buying and redeeming tickets. We are going to write a custom function that fetches the users’ tickets, either when they connect their wallet or when they return to the dapp:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image27.png)
 
 The fetchUserTickets is a good example of how to fetch data in a contract `bigmap` using `Taquito`:
 
@@ -92,11 +92,11 @@ After the users connect their wallet, we are going to save their address in a va
 
 Now let’s have a look at the different steps to connect a user with the `BeaconWallet`:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image17.png)
 
 The first step is the same as when we instantiated the wallet on mount. However, after creating the instance of the wallet, we have to request permission from the users to connect to their wallets, which will also allow them to choose the wallet they want to use. The `requestPermissions` method on the wallet instance will open the Beacon popup and request the users to choose a wallet and connect to it:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image7.png)
 
 This method takes a JavaScript object as a parameter with one mandatory property: `network`. The property itself takes another object with a `type` property \(accepting a value of type `NetworkType`, the enum we imported earlier from `@airgap/beacon-sdk`\) and a `rpcUrl` property \(with the address of the node you want to connect to\). After the user accepts the connection, we can move on and fetch the different information we need.
 
@@ -104,7 +104,7 @@ This method takes a JavaScript object as a parameter with one mandatory property
 
 Once we have the permission, we have to tell the Tezos toolkit from Taquito we created earlier to use the wallet we’ve been allowed to use and we can get the user’s address with the `getPKH` method on the wallet instance:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image16.png)
 
 The `TezosToolkit` instance exposes a method called `setWalletProvider` that you just need to call and pass the newly created wallet to in order to set up the signer. Then, you can get the user’s address with `await wallet.getPKH()`.
 
@@ -112,11 +112,11 @@ The `TezosToolkit` instance exposes a method called `setWalletProvider` that you
 
 After that it’s set, we can fetch the user’s tickets in the same way we did it on mount for returning users:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image13.png)
 
 We should also allow our users to manually disconnect their wallet \(for example, if they want to switch to a different wallet\). The `disconnect` function is pretty simple, the `wallet` instance exposes the `client` instance of the `Beacon SDK` as a property on which you can call the `destroy` method. We will also reset `wallet` and `userAddress` to return the interface to its original state:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image35.png)
 
 ### Buying tickets <a id="08dc"></a>
 
@@ -124,7 +124,7 @@ Setting up the dapp and the wallet is actually the most complex part of the code
 
 We can start by setting up the button the users will press to buy a ticket. The button will have 2 different states: one when it’s waiting for a press and one when it’s waiting for the confirmation of the buy:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image12.png)
 
 The request to buy a ticket will switch `loadingBuy` to `true`, which will add the `loading` class to it and disable it \(in order to prevent multiple clicks\). At the same time, we only trigger `buyTickets` if the user is not already waiting for the confirmation of a previous buy.
 
@@ -132,13 +132,13 @@ The request to buy a ticket will switch `loadingBuy` to `true`, which will add t
 
 Here is how we are going to contact the ticketer contract to get a ticket to the user:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image38.png)
 
 First, we must find the price per ticket, fortunately, this information is recorded in the contract and associated with the ticket type. In order to get it, we can simply call the `get` method available on every bigmap of the storage and pass the key we are looking for, `standard`. If you remember from earlier, the call is going to fail with a `404` error code if the key doesn’t exist and it will be caught in the `try… catch…` statement before sending the transaction.
 
 Now comes the time for the call to the smart contract:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image25.png)
 
 The contract exposes an entrypoint called `buy_tickets` that takes 3 parameters: the number of tickets to create, the address to be credited with the tickets and the type of tickets. The number of tickets is passed to the function as `ticketAmount`, we will use the address that we stored in `userAddress` when the user connected their wallet and the ticket type is just going to be “standard”. Every entrypoint of the contract is available by name as a method on the `methods` property of the contract abstraction. In order to send the transaction, you call `send` on the return value of the entrypoint function.
 
@@ -146,7 +146,7 @@ Every call to a contract entrypoint with Taquito returns an operation object \(h
 
 Once the confirmation has come through, we’d like to update the interface. We could easily do it by incrementing the variable holding the user’s tickets but for the sake of demonstrating how to handle the contract storage with Taquito, let’s fetch the data from the contract and use it to update the interface:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image40.png)
 
 First, let’s get a fresh instance of the storage, or we would pull the old data from before the update: `ticketerStorage = await ticketer.storage()`. This creates a representation of the whole storage in your dapp and you can now access all the information available in the storage.
 
@@ -162,7 +162,7 @@ Now that our users can buy tickets, let’s give them the opportunity to redeem 
 
 Redeeming tickets is going to be a pretty straightforward operation: you provide the type of tickets you want to redeem and the contract uses the sender’s address to decrement their balance. A limit of one ticket is hardcoded in the contract so we won’t handle the number of tickets to redeem from the dapp. Just like buying tickets, the entrypoint we need to call is a method available in the `methods` property of the contract abstraction:
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image18.png)
 
 This function should look familiar, as it is very similar to the one to buy tickets. Here is what happens:
 

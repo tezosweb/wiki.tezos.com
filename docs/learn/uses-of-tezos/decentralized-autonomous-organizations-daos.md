@@ -24,9 +24,9 @@ Within the Tezos ecosystem, the following smart contract frameworks enable anyon
 
 Homebase also provides DAO participants a dashboard to create and vote on proposals that can modify or upgrade governed smart contracts. Below is a preview of Homebase's intuitive UI for creating and interacting with DAOs created using the BaseDAO framework. The interface enables DAO creators to spin up DAOs based on several templates, select parameters of the governance process \(e.g. quorum\) and allocate an initial distribution of the DAO’s native token. It will also include integration with exciting new Tezos capabilities like [Tezos Domains](https://docs.tezos.domains/).
 
-![Homebase UI](../../.gitbook/assets/image (5).png)
+![Homebase UI](../../assets/image4.png)
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image3.png)
 
 Over the coming weeks and months, we’ll be enhancing and extending these templates for new exciting applications such as fractional ownership of NFTs and DAOs for simple off-chain vote signaling.
 

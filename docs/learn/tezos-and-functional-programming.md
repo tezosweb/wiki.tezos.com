@@ -25,5 +25,5 @@ It is a declarative programming paradigm, which means programming is done with e
 
 Here is a diagram that shows the high-level differences between the EVM \(Ethereum Virtual Machine\), WASM \(Web Assembly\) and Michelson:
 
-![](../.gitbook/assets/languages.png)
+![](../assets/languages.png)
 
