@@ -130,7 +130,7 @@ function DocPageContent({ currentDocRoute, versionMetadata, children }) {
               hiddenSidebarContainer || !sidebar,
           })}>
           <div>
-           { window.location.pathname === "/" && <div className="intro-parent">
+           { currentDocRoute.path === "/" && <div className="intro-parent">
               <div className="intro-banner">
                 <div className="container">
                   <div className=" col intro-text">
