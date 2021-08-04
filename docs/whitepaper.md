@@ -261,6 +261,8 @@ The protocol unfolds in cycles of 4,096 blocks. At the beginning of each cycle, 
 
 _Four cycles of the proof-of-stake mechanism:_ 
 
+![](./assets/pos.png)
+
 ##### Clock
 
 The protocol imposes minimum delays between blocks. In principle, each block can be mined by any stakeholder. However, for a given block, each stakeholder is subject to a random minimum delay. The stakeholder receiving the highest priority may mine the block one minute after the previous block. The stakeholder receiving the second highest priority may mine the block two minutes after the previous block, the third, three minutes, and so on.
