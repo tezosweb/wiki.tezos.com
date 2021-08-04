@@ -86,7 +86,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   /* right: 50%; */
   /* margin-left: -50vw; */
   /* margin-right: -50vw;*/
-
+  z-index: 103;
 }
 
 .intro-text {
@@ -98,7 +98,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   padding-bottom: 3rem;
   max-width: 800px;
   width: 100%;
-  z-index: 103;
 }
 
 .intro-text h1 {
