@@ -19,8 +19,8 @@ module.exports = {
     navbar: {
       title: '',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/tezos-logo.svg',
+        alt: 'Tezos Logo',
+        src: 'img/TezosLogo_Horizontal_White.svg',
       },
       items: [
         // {
