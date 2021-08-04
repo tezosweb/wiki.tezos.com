@@ -38,7 +38,7 @@ Formal verification makes verifiable data doubly verifiable-- and for this reaso
 
 There is a whole specialists' vocabulary used to describe how credentials are handled, stored, presented, verified, and revoked. The software that individual actors use to receive, hold, and present them is called a "wallet", and the software used to issue, transfer, revoke, and verify them is called an "agent". Both interact with verifiable registries \(i.e blockchains and blockchain-like data stores\) in various ways, must importantly for identifying and verifying each other. Spruce Systems has open-sourced a white-label wallet called Credible, and the engine Spruce uses to create and power agents is called DIDKit. Both are intended to work at many scales and in many contexts, and come with Tezos-writing and verifying capabilities built in, with the option to extend support to other blockchains with Rust crates \(see below\).
 
-![Architecture Diagram](../../assets/image (5).png)
+![Architecture Diagram](../../assets/image1.png)
 
 Src: [DID specification](https://www.w3.org/TR/vc-data-model/#lifecycle-details)
 
@@ -46,7 +46,7 @@ Src: [DID specification](https://www.w3.org/TR/vc-data-model/#lifecycle-details)
 
 Verifiable Credentials are designed refer to their issuers and subjects verifiably. This means that in the ideal case, any reference to an entity should be under that entity's direct and ultimate control, yet still be used to verify the credential's contents and trustworthiness cryptographically. In plain language, this means that a verifier would need to be able to get a cryptographic public key corresponding to that identifier, which might change or be deactivated over time.
 
-![](../../assets/image (5).png)
+![](../../assets/image2.png)
 
 Src: [DID specification](https://www.w3.org/TR/did-core/#architecture-overview)
 
