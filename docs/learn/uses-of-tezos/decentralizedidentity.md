@@ -24,7 +24,7 @@ Decentralized identity thinking tends to call any valuable information about som
 
 The goals of decentralized identity are often expressed in negatives and minimums: the disclosure of the minimum data to each verifier necessary to their purpose, the minimum possibility of exfiltration or correlation \(colloquially, "tracking"\), the highest possible barrier to collusion between verifiers, the greatest possible privacy for all parties relative to their peers and counterparties. Even things like checking the revocation status when verifying a revocable credential is thought of defensively-- how to ensure that the issuer can revoke a credential while still ensuring that it receives no information about who verifies it, or how often? This requires sophisticated indirection, and new ways of hiding sensitive information in shared, even public data registries.
 
-![](../../.gitbook/assets/image.png)
+![](../../assets/image.png)
 
 Src: [DID specification](https://w3c.github.io/vc-data-model/#ecosystem-overview)
 
@@ -38,7 +38,7 @@ Formal verification makes verifiable data doubly verifiable-- and for this reaso
 
 There is a whole specialists' vocabulary used to describe how credentials are handled, stored, presented, verified, and revoked. The software that individual actors use to receive, hold, and present them is called a "wallet", and the software used to issue, transfer, revoke, and verify them is called an "agent". Both interact with verifiable registries \(i.e blockchains and blockchain-like data stores\) in various ways, must importantly for identifying and verifying each other. Spruce Systems has open-sourced a white-label wallet called Credible, and the engine Spruce uses to create and power agents is called DIDKit. Both are intended to work at many scales and in many contexts, and come with Tezos-writing and verifying capabilities built in, with the option to extend support to other blockchains with Rust crates \(see below\).
 
-![Architecture Diagram](../../.gitbook/assets/image (5).png)
+![Architecture Diagram](../../assets/image1.png)
 
 Src: [DID specification](https://www.w3.org/TR/vc-data-model/#lifecycle-details)
 
@@ -46,7 +46,7 @@ Src: [DID specification](https://www.w3.org/TR/vc-data-model/#lifecycle-details)
 
 Verifiable Credentials are designed refer to their issuers and subjects verifiably. This means that in the ideal case, any reference to an entity should be under that entity's direct and ultimate control, yet still be used to verify the credential's contents and trustworthiness cryptographically. In plain language, this means that a verifier would need to be able to get a cryptographic public key corresponding to that identifier, which might change or be deactivated over time.
 
-![](../../.gitbook/assets/image (5).png)
+![](../../assets/image2.png)
 
 Src: [DID specification](https://www.w3.org/TR/did-core/#architecture-overview)
 

@@ -125,11 +125,25 @@ function DocPageContent({currentDocRoute, versionMetadata, children}) {
           </aside>
         )}
         <main
-          className={clsx(styles.docMainContainer, {
+          className={clsx(
+            currentDocRoute.path === "/"
+            ? styles.mainPageContainer
+            : styles.docMainContainer, {
             [styles.docMainContainerEnhanced]:
               hiddenSidebarContainer || !sidebar,
           })}>
-         
+
+          { currentDocRoute.path === "/" && <div className="">
+              <div className={styles.introBanner}>
+                  <div className={`col container ${styles.introText}`}>
+                    <h1>Welcome to the <span className="gradient">Tezos</span> Wiki!</h1>
+                    <p>The Tezos Wiki is a place to get started and learn about Tezos. It also aims to answer the frequently 
+                      asked questions about the Tezos protocol & the Tezos ecosystem.</p>
+                  </div>
+                </div>
+            </div>
+            }
+          
           <div
             className={clsx(
               'container padding-bottom--lg',
@@ -138,18 +152,6 @@ function DocPageContent({currentDocRoute, versionMetadata, children}) {
                 [styles.docItemWrapperEnhanced]: hiddenSidebarContainer,
               },
             )}>
-{ currentDocRoute.path === "/" && <div className="intro-parent">
-              <div className="intro-banner">
-                <div className="container">
-                  <div className=" col intro-text">
-                    <h1>Welcome to the <span className="gradient">Tezos</span> Wiki!</h1>
-                    <p>The Tezos Wiki is a place to get started and learn about Tezos. It also aims to answer the frequently asked questions about the Tezos protocol & the Tezos ecosystem.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            }
             <MDXProvider components={MDXComponents}>{children}</MDXProvider>
             
           
