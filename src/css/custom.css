@@ -415,3 +415,13 @@ blockquote {
 .sidebar_15mo {
   padding-top: 48px !important;
 }
+
+/* Mobile dark blue background buttons */
+.bg-darkblue {
+  background-color: #272D3D !important;
+  border: 0 !important;
+}
+
+.bg-darkblue span, .bg-darkblue svg {
+  color: white;
+}

@@ -20,6 +20,7 @@
     padding-top: var(--ifm-navbar-height);
     width: var(--doc-sidebar-width);
     transition: opacity 50ms ease;
+    padding-top: 48px !important;
   }
 
   .sidebarWithHideableNavbar {
@@ -112,6 +113,7 @@
   /* line-height: 0.9; */
   width: 24px;
 }
+
 
 :global(.menu__list) :global(.menu__list) {
   overflow-y: hidden;

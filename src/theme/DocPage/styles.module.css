@@ -103,6 +103,11 @@
   .fullWidth {
     display: none;
   }
+
+  .introText h1 {
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
 }
 
 .introBanner {

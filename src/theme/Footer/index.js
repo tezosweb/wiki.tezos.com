@@ -123,7 +123,7 @@ function Footer() {
             </div>
             <div className="social-media-row">
              {socialMedia.map(social => (
-               <a href={social.url}>{social.logo}</a>
+               <a key={social.url} href={social.url}>{social.logo}</a>
              ))}
             </div>
             <p className="footer-small-text"><small>Feedback or comments? Get in touch with us at <a className="mail-link-footer" href="mailto:reachout@tezos.com"><strong>reachout@tezos.com</strong></a></small></p>

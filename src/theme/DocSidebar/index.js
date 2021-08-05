@@ -241,7 +241,7 @@ function HideableSidebarButton({onClick}) {
         description: 'The title attribute for collapse button of doc sidebar',
       })}
       className={clsx(
-        'button button--secondary button--outline',
+        'button button--secondary button--outline bg-darkblue',
         styles.collapseSidebarButton,
       )}
       onClick={onClick}>
@@ -269,7 +269,7 @@ function ResponsiveSidebarButton({responsiveSidebarOpened, onClick}) {
             })
       }
       aria-haspopup="true"
-      className="button button--secondary button--sm menu__button"
+      className="button button--secondary button--sm menu__button bg-darkblue"
       type="button"
       onClick={onClick}>
       {responsiveSidebarOpened ? (
