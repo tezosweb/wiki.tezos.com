@@ -30,6 +30,7 @@ module.exports = {
         //   label: 'Tutorial',
         // },
         // {to: '/blog', label: 'Blog', position: 'left'},
+        {to: 'https://tezos.com/', label: 'Tezos.com', position: 'right'},
         {to: 'https://tezos.com/learn/getting-started/', label: 'Learn', position: 'right'},
         {to: 'https://tezos.com/developer-portal/', label: 'Build', position: 'right'},
         {to: 'https://tezos.com/community/', label: 'Community', position: 'right'},
@@ -70,7 +71,7 @@ module.exports = {
           title: 'TECHNOLOGY',
           items: [
             {
-              label: 'White paper',
+              label: 'White Paper',
               href: 'https://tezos.com/whitepaper.pdf',
             },
             {
@@ -86,7 +87,7 @@ module.exports = {
               href: '/',
             },
             {
-              label: 'Gitlab',
+              label: 'GitLab',
               href: 'https://gitlab.com/tezos',
             },
           ],
