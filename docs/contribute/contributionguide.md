@@ -7,7 +7,7 @@ hide_title: true
 
 ## How to Contribute
 
-The Tezos Agora Wiki was started and is maintained by a collaboration of stakeholders including the Tezos Commons Foundation and TQTezos. It is an open-source project and aims to be the most extensive resource of knowledge on Tezos and the Tezos ecosystem. A large part of the material that you will find here currently focuses on Tezos, but it is not opposed to covering informational material for community projects. However, please do not try to pull-request any marketing material as this will be immediately rejected.
+The Tezos Wiki was started and is maintained by a collaboration of stakeholders including the Tezos Commons Foundation and TQTezos. It is an open-source project and aims to be the most extensive resource of knowledge on Tezos and the Tezos ecosystem. A large part of the material that you will find here currently focuses on Tezos, but it is not opposed to covering informational material for community projects. However, please do not try to pull-request any marketing material as this will be immediately rejected.
 
 Pull requests, discussions, and contributions from the community are highly encouraged. Active community members who demonstrate a record of good contributions may be given write access to the repository. Otherwise, Tezos Commons and TQTezos hold the administrative position and final say on the content that is included.
 
