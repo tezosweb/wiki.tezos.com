@@ -1,6 +1,14 @@
-# Website
+# Welcome to the Tezos Wiki!
+
+The Tezos Wiki is a place to get started and learn about Tezos. It also aims to answer the frequently asked questions about the Tezos protocol & the Tezos ecosystem.
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+
+## Contribute
+
+To propose a change to the wiki, submit an issue or make a merge request to this repository.
+
+For more detailed information on the contribution process, please see the [contribution guide]().
 
 ## Installation
 
@@ -23,11 +31,3 @@ yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
