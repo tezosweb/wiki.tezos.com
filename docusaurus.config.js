@@ -110,7 +110,7 @@ module.exports = {
           routeBasePath: '/',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/tqtezos/wiki.tezos.com-private/tree/main/subtree',
+            'https://github.com/tezosweb/wiki.tezos.com/edit/main/',
         },
         blog: {
           showReadingTime: true,

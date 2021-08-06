@@ -8,7 +8,7 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 To propose a change to the wiki, submit an issue or make a merge request to this repository.
 
-For more detailed information on the contribution process, please see the [contribution guide]().
+For more detailed information on the contribution process, please see the [contribution guide](https://github.com/tezosweb/wiki.tezos.com/tree/blob/main/docs/contribute/contributionguide.md).
 
 ## Installation
 
