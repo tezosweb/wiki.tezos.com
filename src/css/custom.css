@@ -1,0 +1,427 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+@font-face {
+  font-family: "GT Eesti Pro Display";
+  src: url('/static/GTEestiProDisplay-Regular.woff') format('woff');
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600;700;900&display=swap");
+
+:root {
+  --ifm-color-primary: #0F61FF;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: #408DFF;
+  --ifm-color-primary-lighter: #7CB3FF;
+  --ifm-color-primary-lightest: #BFE0FF;
+  --ifm-code-font-size: 95%;
+  --ifm-font-color-base: #1E1E1E;
+  --ifm-footer-background-color: #1E1E1E;
+  --ifm-font-family-base: "Roboto";
+
+}
+.markdown > *:first-child {
+  margin-top: -1.5rem !important;
+}
+body {
+  overflow-x: hidden !important;
+}
+
+.markdown > h2:first-child {
+  margin-top: 30px !important;
+}
+
+@media (min-width: 997px) {
+  
+
+  /* .sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar-styles-module {
+    padding-top: 3.1rem !important;
+  } */
+}
+
+.docSidebarContainer {
+  padding-top: 1rem;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.col {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+.hash-link {
+  display: none;
+}
+
+.gradient {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(265.58deg,#9f329f -35.89%,#1161fe 96.06%);
+  background-clip: text;
+}
+
+.intro-banner {
+  background: radial-gradient(circle, #233456, #272D3D);
+  min-height: 20rem;
+  backdrop-filter: blur(4px);
+  margin-bottom: 60px;
+  position: relative;
+  /* left: 63.5%; */
+  /* right: 50%; */
+  /* margin-left: -50vw; */
+  /* margin-right: -50vw;*/
+  z-index: 103;
+}
+
+.intro-text {
+  padding-top: 5rem;
+  font-family: 'GT Eesti Pro Display';
+  color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 3rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+.intro-text h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.25rem;
+  line-height: 70px;
+  color: white;
+}
+
+.intro-text p {
+  font-family: 'Roboto';
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.navbar {
+  background-color: #272D3D;
+  height: 48px;
+}
+.menu {
+  background-color: #F6F9FF;
+}
+
+
+
+
+.pagination-nav__hidden {
+  visibility: hidden;
+}
+
+.container-footer {
+  padding: 0 3rem;
+}
+.menu__link {
+  color: #768AB1;
+  font-weight: 700;
+  line-height: 22px;
+  font-size: 16px;
+}
+.menu__link--active, .menu__link:hover {
+  color: #0F62FF;
+}
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: transparent;
+}
+
+.navbar__item, .navbar__title {
+  color: white;
+  font-size: 0.875rem;
+  font-family: 'GT Eesti Pro Display';
+}
+.navbar__brand {
+  width: 86px;
+  height: 30px;
+}
+
+.pagination-nav__item {
+  background-color: #F6F9FF;
+  border: 0;
+  border-radius: 16px;
+  padding: 32px;
+  font-weight: 500;
+}
+.pagination-nav__label {
+  color: #0F61FF;
+  font-weight: 500;
+  font-size: 26px;
+}
+.pagination-nav__link {
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.pagination-nav__label_next {
+  text-align: left;
+}
+.pagination-nav__label_previous {
+  text-align: right;
+}
+
+.pagination-nav__link h3 {
+line-height: inherit;
+margin: 0;
+}
+
+.pagination-nav__icon svg {
+  vertical-align: middle;
+  margin-top: 11px;
+}
+h1 {
+  font-size: 60px;
+  line-height: 65px;
+  font-family: 'GT Eesti Pro Display' !important;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 52px;
+  line-height: 130%;
+
+  font-family: 'GT Eesti Pro Display' !important;
+  font-weight: 400;
+}
+h3 {
+  font-size: 26px;
+  line-height: 32.5px;
+
+  font-family: 'GT Eesti Pro Display' !important;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 26px;
+  line-height: 32.5px;
+  font-family: 'GT Eesti Pro Display' !important;
+  font-weight: 200;
+}
+
+/* h2 {
+  font-size: 52px;
+  line-height: 66px;
+}
+
+h3 {
+  font-size: 26px;
+} */
+
+h1, h2, h3, .pagination-nav__label, .navbar__title {
+  font-family: 'GT Eesti Pro Display' !important;
+  font-weight: 400;
+}
+
+
+h5 {
+  font-size: 16px;
+}
+.footer {
+  background-color: #1E1E1E;
+  padding-top: 4rem;
+}
+
+.mail-link-footer, mail-link-footer:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.footer__title svg {
+  width: 100px;
+  height: 34px;
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: .05rem;
+}
+
+.footer__link-item, .footer__title {
+  font-family: 'GT Eesti Pro Display';
+}
+.footer__link-item:hover:hover {
+  color: white;
+  text-decoration: none;
+}
+.footer-small-text {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  padding: 2rem 0;
+  font-family: 'GT Eesti Pro Display';
+}
+
+.custom-footer-title {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+.social-media-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-media-row svg {
+  margin-right: 0.5rem;
+}
+
+.custom-footer-column {
+  margin-right: 50px;
+  padding: 0 var(--ifm-spacing-horizontal)
+}
+
+@media only screen and (max-width: 600px) {
+  .custom-footer-column {
+   padding-right: 0;
+   margin-right: 0;
+   padding-left: 1.5rem;
+  }
+  .container-footer {
+    padding: 0 1.4rem;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 997px) {
+   .navbar-sidebar {
+
+    background-color: #0F62FF;
+  }
+
+ .navbar__toggle svg {
+    color: white;
+  }
+
+  .navbar-sidebar__items .menu {
+    background-color: #0F62FF;
+  }
+
+  .navbar-sidebar__items .menu__link {
+    background-color: #0F62FF;
+    color: white;
+    font-size: 40px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-family: 'GT Eesti Pro Display';
+    font-weight: 400;
+  }
+
+  .navbar-sidebar__items .navbar-sidebar__items {
+    height: 100%;
+  }
+
+  .navbar-sidebar__items .menu__link:hover {
+    background-color: #0F62FF;
+    color: white;
+  }
+
+  .pagination-nav {
+    display: block;
+  }
+  .pagination-nav__item {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .pagination-nav__link h3 {
+    font-size: 20px;
+  }
+
+  .pagination-nav__item + .pagination-nav__item {
+    margin-left: 0;
+  }
+
+  .footer__col {
+    padding-left: 1.5rem !important;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .col {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .intro-text {
+    padding: 4rem;
+  }
+  .intro-text h1 {
+    padding-top: 0 !important;
+  }
+
+  .intro-banner {
+    min-height: unset;
+  }
+
+  .col.footer__col {
+    padding-left: 1.5rem !important;
+  }
+
+
+
+}
+
+.menu {
+  padding-top: 24px !important ;
+  padding-bottom: 24px !important; 
+  margin-bottom: 0 !important;
+}
+
+blockquote p {
+  color: #1e1e1e
+}
+blockquote {
+  border-left: 6px solid transparent;
+  border-image: linear-gradient(265.58deg,#9f329f -35.89%,#1161fe 96.06%);
+  border-image-slice: 1;
+}
+.markdown > pre, .markdown > ul, .markdown > p {
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.menu .menu__link.menu__link--sublist:after {
+    background-image: url('../../static/img/arrow-pointing-down.svg');
+    background-size: 24px 24px;
+
+}
+.menu__list-item--collapsed .menu__link--sublist:after {
+  transform: rotateZ(0deg) !important;
+}
+
+/* Sidebar height fix */
+
+.sidebar_15mo {
+  padding-top: 48px !important;
+}
+
+/* Mobile dark blue background buttons */
+.bg-darkblue {
+  background-color: #272D3D !important;
+  border: 0 !important;
+}
+
+.bg-darkblue span, .bg-darkblue svg {
+  color: white;
+}
