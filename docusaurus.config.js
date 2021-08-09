@@ -19,8 +19,8 @@ module.exports = {
     navbar: {
       title: '',
       logo: {
-        alt: 'Tezos Logo',
-        src: 'img/TezosLogo_Horizontal_White.svg',
+        alt: 'Tezos Wiki',
+        src: 'img/TezosWiki.svg',
       },
       items: [
         // {
@@ -64,6 +64,10 @@ module.exports = {
             {
               label: 'Careers',
               href: 'https://tezos.com/careers/',
+            },
+            {
+              label: 'Visual Guide',
+              href: 'https://tezos.com/visual-guide/',
             },
           ],
         },
