@@ -60,7 +60,7 @@ Among other features, Edo also updates the Tezos amendment process by lowering p
 
 Edo was [activated](https://www.tezosagora.org/period/40) as the new Tezos protocol in February 2021.
 
-### [Florence](https://www.tezosagora.org/period/46%20) \(PsFLorena\)
+### [**Florence**](https://www.tezosagora.org/period/46%20) \(PsFLorena\)
 
 The Florence proposal was a joint effort from Nomadic Labs, Marigold, DaiLambda, and Tarides.
 
@@ -75,7 +75,7 @@ Baking Accounts were also included in the feature set, however, ongoing testing 
 
 A full changelog is available [here](http://doc.tzalpha.net/protocols/009_florence.html). 
 
-### [Granada](https://www.tezosagora.org/period/51%20) \(PtGRAND\)
+### [**Granada**](https://www.tezosagora.org/period/51%20) \(PtGRAND\)
 
 The Granada proposal injected in May of 2021 was a joint effort from Nomadic Labs, Marigold, TQ, Tarides and DaiLambda.  
   

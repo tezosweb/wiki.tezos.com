@@ -20,18 +20,18 @@ Recently, NFTs have been a powerful primitive demonstrating usefulness in the cr
 
 ### Standards and Resources
 
-* [**FA2**](https://gitlab.com/tzip/tzip/-/blob/master/proposals/tzip-12/tzip-12.md) - a standard for a unified token contract interface, supporting a wide range of token types and implementations. 
-* [**tzNFT**](https://github.com/tqtezos/nft-tutorial) - a tutorial showing users how to originate and interact with the FA2 NFT contract implementation.
-* [**TZIP-021**](https://gitlab.com/tzip/tzip/-/blob/tzip-21-spec/proposals/tzip-21/tzip-21.md) - an emerging contract multimedia metadata standard. 
+* [FA2](https://gitlab.com/tzip/tzip/-/blob/master/proposals/tzip-12/tzip-12.md) - a standard for a unified token contract interface, supporting a wide range of token types and implementations. 
+* [tzNFT](https://github.com/tqtezos/nft-tutorial) - a tutorial showing users how to originate and interact with the FA2 NFT contract implementation.
+* [TZIP-021](https://gitlab.com/tzip/tzip/-/blob/tzip-21-spec/proposals/tzip-21/tzip-21.md) - an emerging contract multimedia metadata standard. 
 
 ### Tools and Applications
 
-* \*\*\*\*[**Hicetnunc**](https://www.hicetnunc.xyz/) - an open NFT platform for artists
-* \*\*\*\*[**Truesy**](https://www.truesy.com/) ****- a highly curated NFT marketplace
-* [**Kalamint**](https://kalamint.io/) - A community owned NFT marketplace on Tezos.
-* [**OpenMinter**](https://github.com/tqtezos/minter) ****and [**Minter-SDK**](https://github.com/tqtezos/minter-sdk) - A reusable dApp and SDK that allows anyone to create, collect, sell, or swap NFTs on Tezos.
-* \*\*\*\*[**tzcolors**](https://www.tzcolors.io)\*\*\*\*
-* \*\*\*\*[**TezAuction**](https://tez.auction/#/)\*\*\*\*
+* \*\*\*\*[Hicetnunc](https://www.hicetnunc.xyz/) - an open NFT platform for artists
+* \*\*\*\*[Truesy](https://www.truesy.com/) ****- a highly curated NFT marketplace
+* [Kalamint](https://kalamint.io/) - A community owned NFT marketplace on Tezos.
+* [OpenMinter](https://github.com/tqtezos/minter) ****and [Minter-SDK](https://github.com/tqtezos/minter-sdk) - A reusable dApp and SDK that allows anyone to create, collect, sell, or swap NFTs on Tezos.
+* \*\*\*\*[tzcolors](https://www.tzcolors.io)\*\*\*\*
+* \*\*\*\*[TezAuction](https://tez.auction/#/)\*\*\*\*
 * CricTez
 
 

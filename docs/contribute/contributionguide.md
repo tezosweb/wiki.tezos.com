@@ -17,7 +17,7 @@ Please reach out in the [@TezosPlatform](https://t.me/joinchat/BtLGEcc-Ed4xNmMy%
 
 ### How to Contribute
 
-To propose a change to the wiki, submit an issue or make a merge request to [**this GitHub repository**](https://github.com/tezosweb/wiki.tezos.com). 
+To propose a change to the wiki, submit an issue or make a merge request to [this GitHub repository](https://github.com/tezosweb/wiki.tezos.com). 
 
 ### Rules
 
