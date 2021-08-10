@@ -76,7 +76,7 @@ Emmy is the predecessor of Emmy+. In both Emmy and Emmy+, the fork choice rule i
 
 The rewards in Emmy+ have been updated in Carthage to address deflationary baking.
 
-[Emmy★ is proposed](https://gitlab.com/tzip/tzip/-/merge_requests/134) as a successor of Emmy+. Emmy★ is designed to offer faster finality, about twice as fast as in Emmy+. without compromising its security. Emmy★ achieves this with a tweak in the definition of the minimal delay function, which allows for blocks to be produced every 30 seconds, and with an increase in the number of endorsements per block. As a consequence, on a healthy chain and for an attacker with 33% stake for instance, the number of confirmations decreases from 6 blocks to 2 blocks, therefore from 6 minutes to 1 minute, a 6 fold improvement.
+[Emmy\* is proposed](https://gitlab.com/tzip/tzip/-/merge_requests/134) as a successor of Emmy+. Emmy\* is designed to offer faster finality, about twice as fast as in Emmy+. without compromising its security. Emmy\* achieves this with a tweak in the definition of the minimal delay function, which allows for blocks to be produced every 30 seconds, and with an increase in the number of endorsements per block. As a consequence, on a healthy chain and for an attacker with 33% stake for instance, the number of confirmations decreases from 6 blocks to 2 blocks, therefore from 6 minutes to 1 minute, a 6 fold improvement.
 
 ### Further resources <a id="resources"></a>
 
