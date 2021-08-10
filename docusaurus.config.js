@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Tezos Wiki',
-  tagline: 'The Tezos Wiki is a place to get started and learn about Tezos. It also aims to answer the frequently asked questions about the Tezos protocol & the Tezos ecosystem.',
+  tagline: 'The Tezos Wiki is a place to get started and learn about Tezos. It also aims to answer the frequently asked questions about the Tezos protocol and the Tezos ecosystem.',
   url: 'https://wiki.tezos.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
