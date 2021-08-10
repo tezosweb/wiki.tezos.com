@@ -67,7 +67,7 @@ module.exports = {
               href: 'https://tezos.com/careers/',
             },
             {
-              label: 'Visual Identity',
+              label: 'Tezos Visual Identity',
               href: 'https://tezos.com/visual-identity/',
             },
           ],
