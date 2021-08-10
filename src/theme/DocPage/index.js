@@ -138,7 +138,7 @@ function DocPageContent({currentDocRoute, versionMetadata, children}) {
                   <div className={`col container ${styles.introText}`}>
                     <h1>Welcome to the <span className="gradient">Tezos</span> Wiki!</h1>
                     <p>The Tezos Wiki is a place to get started and learn about Tezos. It also aims to answer the frequently 
-                      asked questions about the Tezos protocol & the Tezos ecosystem.</p>
+                      asked questions about the Tezos protocol and the Tezos ecosystem.</p>
                   </div>
                 </div>
             </div>
