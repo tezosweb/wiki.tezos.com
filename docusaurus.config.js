@@ -16,6 +16,7 @@ module.exports = {
     colorMode: {
       disableSwitch: true,
     },
+    image: 'img/metadataimage_tezoswiki.jpg',
     navbar: {
       title: '',
       logo: {
