@@ -21,8 +21,8 @@ Real-time pricing of stranded assets is notoriously difficult to gauge because i
 
 **Standards and Resources**
 
-* [**FA2**](https://gitlab.com/tzip/tzip/-/blob/master/proposals/tzip-12/tzip-12.md) **-** A standard for a unified token contract interface, supporting a wide range of token types and implementations.
-* [**NyX Standard**](https://gitlab.com/equisafe/nyx)**:** A set of digital contracts standards, designed for issuers and buyers of financial instruments, to be used on the Tezos blockchain.
+* [FA2](https://gitlab.com/tzip/tzip/-/blob/master/proposals/tzip-12/tzip-12.md) **-** A standard for a unified token contract interface, supporting a wide range of token types and implementations.
+* [NyX Standard](https://gitlab.com/equisafe/nyx)**:** A set of digital contracts standards, designed for issuers and buyers of financial instruments, to be used on the Tezos blockchain.
 
 **Benefits of Tokenization on Tezos**  
   
