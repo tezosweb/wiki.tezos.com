@@ -337,6 +337,7 @@ h5 {
   .pagination-nav {
     display: block;
   }
+  
   .pagination-nav__item {
     max-width: 100%;
     margin-bottom: 24px;
