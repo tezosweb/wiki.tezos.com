@@ -7,7 +7,7 @@ hide_title: true
 
 ## Decentralized Finance (DeFi)
 
-**Introduction to Decentralized Finance**
+### Introduction to Decentralized Finance
 
 DeFi is a critical component for blockchain-based networks. As a whole, DeFi refers to the collective term of financial services/instruments on a peer-to-peer public blockchain network. 
 
@@ -15,7 +15,7 @@ With DeFi, the same services that exist within the legacy financial world exist 
 
 The key separation point between the legacy financial world is through DeFi - this process is not only faster but decentralized. That is, these services are global, peer-to-peer, pseudonymous, and open to all. 
 
-**DeFi Primitives**
+### DeFi Primitives
 
 DeFi within an existing public blockchain network can best be characterized by the following “building blocks”.
 
@@ -27,7 +27,7 @@ These primitives fit into a mold that can best be understood in the structure of
 
 This structure, once gradually added onto over time creates a DeFi landscape across a public blockchain network allowing for the addition of higher-level DeFi applications. These higher-level applications will allow for a public blockchain network to have more assets flow between the network and create greater utility.  
   
-**DeFi Examples on Tezos**
+### DeFi Examples on Tezos
 
 _Decentralized Exchanges_: This type of exchange refers to one which enables the trading of various digital assets in a peer-to-peer form. This form dissuades the need for an intermediary or centralized, single party. 
 
