@@ -2,6 +2,9 @@
 hide_table_of_contents: true
 title: "Tezos Clients"
 hide_title: true
+sidebar_label: "Introduction"
+slug: "/build/clients/"
+sidebar_position: 1
 ---
 ## Tezos Clients
 
