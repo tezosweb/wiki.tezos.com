@@ -2,6 +2,9 @@
 hide_table_of_contents: true
 title: "Blockchain Indexers"
 hide_title: true
+sidebar_label: "Introduction"
+slug: "/build/blockchain-indexers/"
+sidebar_position: 1
 ---
 
 ## Blockchain Indexers

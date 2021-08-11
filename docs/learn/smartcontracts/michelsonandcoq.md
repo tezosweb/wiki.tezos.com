@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 hide_table_of_contents: true
 title: "Formal Verification"
 hide_title: true
@@ -29,7 +29,7 @@ GADT stands for Generalized Algebraic Data Types. GADTs allow OCaml developers t
 * machine-check these proofs by a relatively small certification “kernel”;
 * extract certified programs to languages like OCaml, Haskell or Scheme.
 
-[Mi-Cho-Coq](https://gitlab.com/nomadic-labs/mi-cho-coq) is a formalization of the Michelson smart contract language in Coq. It can be used to specify and verify Tezos smart contracts such as [this multisig contract](https://gitlab.com/nomadic-labs/mi-cho-coq/-/blob/master/src/contracts_coq/generic_multisig.v), [the default “manager” contract](https://gitlab.com/nomadic-labs/mi-cho-coq/-/blob/master/src/contracts_coq/manager.v), and the [spending-limit contract of the Cortez wallet](https://blog.nomadic-labs.com/formally-verifying-a-critical-smart-contract.html). Mi-Cho-Coq also serves as the compilation target for the [Albert compiler](https://albert-lang.io/).
+[Mi-Cho-Coq](https://gitlab.com/nomadic-labs/mi-cho-coq) is a formalization of the Michelson smart contract language in Coq. It can be used to specify and verify Tezos smart contracts such as [this multisig contract](https://gitlab.com/nomadic-labs/mi-cho-coq/-/blob/master/src/contracts_coq/generic_multisig.v), [the default “manager” contract](https://gitlab.com/nomadic-labs/mi-cho-coq/-/blob/master/src/contracts_coq/manager.v), and the [spending-limit contract of the Cortez wallet](https://blog.nomadic-labs.com/formally-verifying-a-critical-smart-contract.html). Mi-Cho-Coq also serves as the compilation target for the [Albert compiler](https://gitlab.com/nomadic-labs/albert%20).
 
 ### Why is this important for financial contracts?
 

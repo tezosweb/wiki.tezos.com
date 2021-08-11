@@ -2,6 +2,7 @@
 hide_table_of_contents: true
 title: "The Tezos Consensus Algorithm"
 hide_title: true
+sidebar_position: 2
 ---
 ## The Tezos Consensus Algorithm
 

@@ -1,6 +1,6 @@
 ---
 description: A list of past successful protocol upgrades and their features.
-sidebar_position: 4
+sidebar_position: 5
 hide_table_of_contents: true
 title: "Past Tezos Amendments"
 hide_title: true

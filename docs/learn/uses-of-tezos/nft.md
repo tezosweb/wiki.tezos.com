@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 6
 hide_table_of_contents: true
 title: "Non-Fungible Tokens (NFTs)"
 hide_title: true
@@ -32,7 +32,15 @@ Recently, NFTs have been a powerful primitive demonstrating usefulness in the cr
 * [OpenMinter](https://github.com/tqtezos/minter) ****and [Minter-SDK](https://github.com/tqtezos/minter-sdk) - A reusable dApp and SDK that allows anyone to create, collect, sell, or swap NFTs on Tezos.
 * \*\*\*\*[tzcolors](https://www.tzcolors.io)\*\*\*\*
 * \*\*\*\*[TezAuction](https://tez.auction/#/)\*\*\*\*
-* CricTez
+* [CricTez](https://crictez.medium.com/introducing-crictez-21a284c60e94)
+* [MinterPop](https://minterpop.com/)
+* [OneOf](https://oneof.com/)
+* [RedBull Racing Honda](https://www.redbull.com/int-en/redbullracing/tezos-joins-as-official-blockchain-partner)
+* [McLaren Racing](https://www.mclaren.com/racing/partners/tezos/)
+* [Emergents TCG](https://www.emergents.gg/)
+* [Play with Brio ](https://playwithbrio.com/home)
+* [Tezos Profiles](https://tzprofiles.com/)
+* [Ipocamp](https://www.ipocamp.io/)
 
 
 

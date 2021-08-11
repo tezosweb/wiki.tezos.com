@@ -2,6 +2,9 @@
 hide_table_of_contents: true
 title: "Tezos Clients"
 hide_title: true
+sidebar_label: "Introduction"
+slug: "/build/clients/"
+sidebar_position: 1
 ---
 ## Tezos Clients
 
@@ -9,7 +12,7 @@ hide_title: true
 
 ### Connecting to the network
 
-The _tezos-client_ and Tezos RPC need to be connected to a Tezos node. You can connect to your own [tezos node](https://opentezos.com/deploy-a-node/introduction) or you can use a community node on the Tezos mainnet or testnet.
+The _tezos-client_ and Tezos RPC need to be connected to a Tezos node. You can connect to your own [tezos node](https://opentezos.com/%20) or you can use a community node on the Tezos mainnet or testnet.
 
 You can find a list of community nodes [here](https://tezostaquito.io/docs/rpc_nodes/).
 
@@ -17,11 +20,11 @@ If you use a testnet you can download a free faucet file with test XTZ on it [he
 
 ### Tezos RPC \(Remote Procedure Call\)
 
-RPC [\[1\]](https://opentezos.com/tezos-basics/introduction_to_cli_and_rpc#references) is a client-server protocol where the requesting program is the client and the program providing the service is the server.
+[RPC](https://tezos.gitlab.io/developer/rpc.html) is a client-server protocol where the requesting program is the client and the program providing the service is the server.
 
 Tezos nodes provide a JSON/RPC interface to interact with the Tezos network. Note that although it uses RPC and is JSON based, it does not follow the `JSON-RPC` protocol.
 
-A complete list of RPC calls is available [here](http://tezos.gitlab.io/shell/rpc.html#rpc-index-shell). Make sure to check the protocol version before using these calls. The calls available in the Edo protocol are available [here](http://tezos.gitlab.io/008/rpc.html#id1).
+A complete list of RPC calls is available [here](http://tezos.gitlab.io/shell/rpc.html#rpc-index-shell). Make sure to check the protocol version before using these calls. The calls available in the Granada protocol are available[ here](https://tezos.gitlab.io/010/rpc.html%20).
 
 #### RPC call examples
 
@@ -95,7 +98,7 @@ The full documentation on _Tezos-client_ can be found [here](https://tezos.gitla
 
 #### Client examples
 
-This is a non-exhaustive list of possible commands with _tezos-client_. To discover more commands please refer to the [CLI manual](https://tezos.gitlab.io/008/cli-commands.html#cli-commands).
+This is a non-exhaustive list of possible commands with _tezos-client_. To discover more commands please refer to the [CLI manual](https://tezos.gitlab.io/010/cli-commands.html%20).
 
 **Get balance**
 
@@ -138,8 +141,8 @@ The recipe of this command is as follows:
 You can observe your actions on the block explorers :
 
 * Mainnet: [https://tzstats.com](https://tzstats.com/)
-* Edonet: [https://edo.tzstats.com](https://edo.tzstats.com/)
-* DelphiNet: [https://delphi.tzstats.com](https://delphi.tzstats.com/)
+* Edonet: [https://edo2net.tzkt.io/](https://edo2net.tzkt.io/)
+* DelphiNet: [https://delphinet.tzkt.io/](https://delphinet.tzkt.io/)
 
 ### Tezos-admin-client
 
@@ -234,6 +237,4 @@ This is a non-exhaustive list of possible commands with tezos-admin-client. To d
 `$ tezos-admin-client tezos-admin-client p2p stat`
 
 ### 
-
-
 
