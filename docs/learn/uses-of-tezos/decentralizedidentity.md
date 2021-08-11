@@ -2,7 +2,7 @@
 id: decentralized-identity
 title: Identity (DID)
 hide_title: true
-sidebar_position: 5
+sidebar_position: 8
 hide_table_of_contents: true
 ---
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 9
 hide_table_of_contents: true
 title: "Decentralized Autonomous Organizations (DAOs)"
 hide_title: true

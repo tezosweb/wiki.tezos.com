@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 hide_table_of_contents: true
 title: "Decentralized Finance (DeFi)"
 hide_title: true
