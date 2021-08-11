@@ -1,9 +1,11 @@
 ---
 sidebar_position: 2
 hide_table_of_contents: true
+title: "Lorentz"
+hide_title: true
 ---
 
-# Lorentz
+## Lorentz
 
 [Lorentz](https://gitlab.com/morley-framework/morley/-/blob/master/code/lorentz/README.md) is a stack-based embedded Domain Specific Language \(eDSL\) in Haskell that compiles to Michelson.
 

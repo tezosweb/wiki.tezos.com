@@ -1,9 +1,11 @@
 ---
 sidebar_position: 3
 hide_table_of_contents: true
+title: "Indigo"
+hide_title: true
 ---
 
-# Indigo
+## Indigo
 
 Indigo eDSL is a high-level language for developing Michelson contracts.
 

@@ -1,10 +1,12 @@
 ---
 sidebar_position: 4
 hide_table_of_contents: true
+title: "Cleveland"
+hide_title: true
 ---
 
 
-# Cleveland
+## Cleveland
 
 [Cleveland](https://gitlab.com/morley-framework/morley/-/tree/master/code/cleveland) is a Haskell library for testing Michelson contracts.
 

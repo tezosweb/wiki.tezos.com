@@ -1,9 +1,11 @@
 ---
 sidebar_position: 1
 hide_table_of_contents: true
+title: "Morley"
+hide_title: true
 ---
 
-# Morley
+## Morley
 
 [Morley](https://gitlab.com/morley-framework/morley/-/blob/master/code/morley/README.md) is a Haskell-based framework for meta-programming Michelson smart contracts.
 

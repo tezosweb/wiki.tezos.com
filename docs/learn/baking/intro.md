@@ -2,6 +2,9 @@
 hide_table_of_contents: true
 title: "Baking"
 hide_title: true
+slug: /learn/baking/
+sidebar_label: "Introduction"
+sidebar_position: 1
 ---
 
 ## Baking

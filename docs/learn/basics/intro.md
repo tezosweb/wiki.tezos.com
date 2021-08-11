@@ -2,6 +2,8 @@
 hide_table_of_contents: true
 title: "Intro to Tezos"
 hide_title: true
+slug: /learn/basics/
+sidebar_label: "Introduction"
 ---
 
 ## Intro to Tezos
