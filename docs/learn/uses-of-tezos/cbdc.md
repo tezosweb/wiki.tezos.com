@@ -13,13 +13,13 @@ There's been multiple test cases of this particular concept in practice on Tezos
 
 **Examples on Tezos**:
 
-#### _Société Générale - Forge_
+##### _Société Générale - Forge_
 
 [Société Générale](https://www.societegenerale.com/en) is one of the leading European financial services groups. In September 2020, Société Générale - Forge [selected](https://cryptobriefing.com/tezos-power-frances-cbdc-stablecoin-experiment/) the Tezos blockchain for experimentation with CBDC research and development. This is ex post facto of Banque de France [selecting](https://www.banque-france.fr/en/communique-de-presse/banque-de-france-press-release-20-july-2020) Société Générale - Forge as part of its group to experiment with CBDC technology around interbank settlements in July 2020.
 
 As of today - French startup [Lugh](https://www.lugh.io/) has launched a new Euro stablecoin \(Lugh\) on the Tezos blockchain, with associated bank deposits held by Société Générale and audits from PwC and Maghreb.
 
-#### _BNP Paribas and Blockchain Xdev \(The Blockchain Group\)_
+##### _BNP Paribas and Blockchain Xdev \(The Blockchain Group\)_
 
 In November 2020, it was [announced](https://www.theblockchain-group.com/wp-content/uploads/2020/11/Communication-OCDE-UK-Nov2020.pdf) that BNP Paibas alongside CA CIB, Caisse des Dépôts, Tokeny and Blockchain Xdev \(The Blockchain Group\) were combining expertise to launch a project exploring the potential use and implications of Digital Interbank Currency \(DIBC\). Tezos and Ethereum were chosen as initial technologies for exploration.
 

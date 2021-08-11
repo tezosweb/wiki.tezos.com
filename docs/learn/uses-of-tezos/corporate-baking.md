@@ -17,23 +17,23 @@ A corporate baking operation provides select enterprises with firsthand experien
 
 **Corporate Bakers on Tezos**
 
-#### _EDF / Exaion_
+##### _EDF / Exaion_
 
 As a subsidiary of the energy provider EDF providing high computing power, Exaion joined the consensus to validate transactions on the Tezos network. Exaion aims to prepare business grade decentralized solutions and a future transaction market with financial players. Exaion is an open baker, allowing third-part Tezos to delegate their Tez and earn rewards.
 
-#### _Sword Group / Sword France_
+##### _Sword Group / Sword France_
 
 In November 2020, it was [announced](https://www.sword-group.com/en/news/sword-france-becomes-a-tezos-baker/) that Sword France, subsidiary of Sword Group had begun a baking operation on the Tezos Network. Sword France is also responsible for the release of [Tezos DigiSign](https://gitlab.com/sword-france/tezos-digisign) - an open source tool to sign, verify, and store documents using the Tezos blockchain.
 
-#### _The Blockchain Group / Blockchain Xdev_
+##### _The Blockchain Group / Blockchain Xdev_
 
 In February 2021, The Blockchain Group [announced](https://nomadic-labs.com/download/PR-TBG-Baker.pdf) that they will become a corporate baker on the Tezos network through its subsidiary - Blockchain Xdev. The Blockchain Group is also responsible for [launching](https://www.theblockchain-group.com/wp-content/uploads/2020/12/Blockchain-Group-Plateforme-Tokenization.pdf) a tokenization platform back in December 2020.
 
-#### _SmartNode_
+##### _SmartNode_
 
 Created by founders of SmartChain consulting company, SmartNode is an entity dedicated to delegation or staking services. As a public baker on the Tezos network, SmartNode proposes As a public baker on the Tezos network, SmartNode proposes to stake tez at a low commission fees. SmartNode integrates a simple solution to access tez easier through prepaid cards.
 
-#### _CoinHouse_
+##### _CoinHouse_
 
 CoinHouse is one of the only Virtual Asset Services Provider \(VASP\) registered by the French regulator AMF and launched a baker on Tezos. Customers are able to delegate their tez to the baker to get rewards. Assets are delegated and custodian in accordance with the highest legal standards in French law.
 
