@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 hide_table_of_contents: true
 title: "Getting tez"
 hide_title: true
