@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 hide_table_of_contents: true
 title: "Non-Fungible Tokens (NFTs)"
 hide_title: true

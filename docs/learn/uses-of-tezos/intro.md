@@ -2,6 +2,9 @@
 hide_table_of_contents: true
 title: "Uses of Tezos"
 hide_title: true
+sidebar_label: "Introduction"
+slug: "/learn/uses-of-tezos/"
+sidebar_position: 1
 ---
 ## Uses of Tezos
 
