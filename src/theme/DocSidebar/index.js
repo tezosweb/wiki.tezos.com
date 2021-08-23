@@ -22,6 +22,7 @@ import IconArrow from '@theme/IconArrow';
 import IconMenu from '@theme/IconMenu';
 import IconExternalLink from '@theme/IconExternalLink';
 import {translate} from '@docusaurus/Translate';
+import SearchBar from '@theme/SearchBar';
 import styles from './styles.module.css';
 const MOBILE_TOGGLE_SIZE = 24;
 
@@ -142,6 +143,7 @@ function DocSidebarItemCategory({
             handleMenuListHeight(false);
           }
         }}>
+          
         <DocSidebarItems
           items={items}
           tabIndex={collapsed ? '-1' : '0'}
@@ -334,8 +336,8 @@ function DocSidebar({
           responsiveSidebarOpened={showResponsiveSidebar}
           onClick={toggleResponsiveSidebar}
         />
-
-        <ul className="menu__list">
+        <SearchBar />
+        <ul style={{marginTop: '25px'}} className="menu__list">
           <DocSidebarItems
             items={sidebar}
             onItemClick={closeResponsiveSidebar}

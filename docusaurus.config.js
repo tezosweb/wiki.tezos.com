@@ -13,6 +13,10 @@ module.exports = {
   organizationName: 'Blokhaus', // Usually your GitHub org/user name.
   projectName: 'wiki.tezos.com', // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: '490d1d497dfa19015d0331b7de5ff3f0',
+      indexName: 'tezos',
+    },
     colorMode: {
       disableSwitch: true,
     },

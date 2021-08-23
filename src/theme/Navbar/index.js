@@ -106,7 +106,6 @@ function Navbar() {
               <IconMenu />
             </button>
           )}
-          {!hasSearchNavbarItem && <SearchBar />}
         </div>
       </div>
       <div
