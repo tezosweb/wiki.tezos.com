@@ -7,7 +7,7 @@ hide_title: true
 
 ## Tokenization
 
-**Introduction to Tokenization**
+### Introduction to Tokenization
 
 Asset tokenization refers to the collective term of converting both physical and non-physical assets into digital ones. 
 
@@ -20,13 +20,13 @@ Security tokens \(see STO’s\) allow stranded assets to be liquified and traded
 Real-time pricing of stranded assets is notoriously difficult to gauge because it’s not like a skyscraper gets bought and sold several times a day so that you can see how much your skyscraper in the neighborhood is worth. So, knowing the true price of stranded assets is difficult. By tokenizing, you sort out the real price.
 
 
-**Standards and Resources**
+### Standards and Resources
 
 * [**FA2**](https://gitlab.com/tzip/tzip/-/blob/master/proposals/tzip-12/tzip-12.md) **-** A standard for a unified token contract interface, supporting a wide range of token types and implementations.
 * \*\*\*\*[**FA1.2**](https://assets.tqtezos.com/docs/token-contracts/fa12/1-fa12-intro/) - At its core, FA1.2 contains a ledger which maps identities to token balances, providing a standard API for token transfer operations, as well as providing approval to external contracts \(e.g. an auction\) or accounts to transfer a user's tokens.
 * [**NyX Standard**](https://gitlab.com/equisafe/nyx)**:** A set of digital contracts standards, designed for issuers and buyers of financial instruments, to be used on the Tezos blockchain.
 
-**Benefits of Tokenization on Tezos**  
+### Benefits of Tokenization on Tezos**  
   
 _**Institutional-grade smart contracts**_ ****— Tezos utilizes formal verification, a process that proves the mathematical correctness of the code. The Tezos blockchain allows for the facilitation of formally-verified smart contracts. Essentially, prior to sending $1 billion over the blockchain, one can run a formal test to simulate the transaction and ensure it will execute smoothly. The kind of smart contract language Tezos has built allows one the discipline to mathematically prove a contract \(off-chain, during its development\) before putting it on-chain. So, formal verification is a practice one does. Other chains, like Cardano, will similarly allow formal verification. So why does Tezos makes such a big deal out of it? Because Tezos aims to be a high-security, high-value chain and wants to make rigor and safety key practices. In other words, formal verification within Tezos strides to be cultural.
 
@@ -34,7 +34,7 @@ _**Secure custody**_ ****— Within the Tezos client software, it includes a for
 
 _**Upgradeability**_ — Tezos features a formal mechanism by which network participants are able to upgrade the protocol through a formal amendment process. Essentially, any of the newest features/tech that emerges can be ported onto the Tezos protocol via on-chain governance. This feature will allow Tezos to last much longer and be able to evolve and continuously adapt to changing times.
 
-**Examples on Tezos**
+### Examples on Tezos
 
 ##### _Logical Pictures & BNP Paribas - 21 Content Ventures_
 

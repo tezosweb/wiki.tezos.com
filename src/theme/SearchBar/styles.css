@@ -1,0 +1,50 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+:root {
+  --docsearch-primary-color: var(--ifm-color-primary);
+  --docsearch-text-color: var(--ifm-font-color-base);
+}
+
+.DocSearch-Button {
+  margin: 0;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid #768AB1;
+  border-radius: 0;
+  transition: all var(--ifm-transition-fast)
+    var(--ifm-transition-timing-default);
+    margin-bottom: 30px;
+}
+.DocSearch-Search-Icon {
+  color: #768AB1 !important;
+}
+.DocSearch-Button-Keys {
+  display: none;
+}
+
+@media (max-width: 997px) {
+  .DocSearch-Button  {
+   border-bottom: 0;
+   z-index:  99999;
+  }
+  .searchbar-menu {
+    margin-bottom: 30px !important;
+  }
+}
+
+.DocSearch-Button:hover{
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.DocSearch-Container {
+  z-index: 9999;
+}
+.searchBox {
+  z-index: 999;
+}
