@@ -336,7 +336,7 @@ function DocSidebar({
           responsiveSidebarOpened={showResponsiveSidebar}
           onClick={toggleResponsiveSidebar}
         />
-        <div className="menu__list">
+        <div className="menu__list searchbar-menu">
         <SearchBar />
         </div>
         <ul className="menu__list">

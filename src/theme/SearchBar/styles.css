@@ -32,6 +32,9 @@
    border-bottom: 0;
    z-index:  99999;
   }
+  .searchbar-menu {
+    margin-bottom: 30px !important;
+  }
 }
 
 .DocSearch-Button:hover{
