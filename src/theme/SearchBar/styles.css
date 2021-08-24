@@ -18,6 +18,20 @@
   border-radius: 0;
   transition: all var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
+    margin-bottom: 30px;
+}
+.DocSearch-Search-Icon {
+  color: #768AB1 !important;
+}
+.DocSearch-Button-Keys {
+  display: none;
+}
+
+@media (max-width: 997px) {
+  .DocSearch-Button  {
+   border-bottom: 0;
+   z-index:  99999;
+  }
 }
 
 .DocSearch-Button:hover{
@@ -26,5 +40,8 @@
 }
 
 .DocSearch-Container {
-  z-index: calc(var(--ifm-z-index-fixed) + 1);
+  z-index: 9999;
+}
+.searchBox {
+  z-index: 999;
 }

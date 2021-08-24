@@ -336,8 +336,11 @@ function DocSidebar({
           responsiveSidebarOpened={showResponsiveSidebar}
           onClick={toggleResponsiveSidebar}
         />
+        <div className="mb-28 lg:mb-0 menu__list">
         <SearchBar />
-        <ul style={{marginTop: '25px'}} className="menu__list">
+        </div>
+        <ul className="menu__list">
+
           <DocSidebarItems
             items={sidebar}
             onItemClick={closeResponsiveSidebar}
