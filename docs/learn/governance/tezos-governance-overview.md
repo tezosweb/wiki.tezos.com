@@ -28,9 +28,9 @@ To speed up computations for deciding which delegates are selected to bake, the 
 
 If someone does not have 8,000 ꜩ or does not want to set up computing infrastructure to bake blocks, they may delegate their tokens to a baker. The baker does not own or control the delegated tokens in any way. In particular, it cannot spend them. However, if and when one of these tokens is randomly selected to bake a block, that right will belong to the baker. In practice, bakers usually share the additional revenue generated from the delegated tokens with the coin holder.
 
-#### The Four Stages of Tezos Governance <a id="the-four-stages-of-tezos-governance"></a>
+#### The Five Stages of Tezos Governance <a id="the-five-stages-of-tezos-governance"></a>
 
-The amendment process can be broken into four discrete periods: the Proposal Period, the Exploration Period, the Testing Period, and the Promotion Period. Each of these four periods lasts eight baking cycles \(i.e. 32,768 blocks or roughly 22 days, 18 hours\), comprising almost exactly three months from proposal to activation.
+The self-amendment process is split into 5 periods: Proposal Period, Exploration Vote Period, Cooldown Period, Promotion Vote Period, and Adoption Period. Each of these five periods lasts five baking cycles (i.e.  20,480 blocks or roughly 14 days, 5 hours), comprising roughly 2 months and 10 days.
 
 As summarized in the flowchart diagram below, any failure to proceed to the subsequent period reverts the network back to a Proposal Period. In other words, failure to proceed restarts the entire amendment process.
 
@@ -73,6 +73,8 @@ Regardless of the outcome of the vote, the process reverts back to the Proposal 
 ##### Adoption Period
 
 The Adoption Period provides a "cool-down" allowing developers and bakers some additional time to adapt their code and infrastructure to the upgrade based on the results of the Promotion Vote Period. Adoption period: at the end of the period the proposal is activated as the new protocol and we go back to a proposal period.
+
+Following the adoption period the protocol is activated. After this step the blocks added to the chain are interpreted in the newly activated protocol. As a result gas costs (and other such details of operation inclusion) may differ.
 
 #### The Supermajority and Quorum Requirements <a id="the-supermajority-and-quorum-requirements"></a>
 
