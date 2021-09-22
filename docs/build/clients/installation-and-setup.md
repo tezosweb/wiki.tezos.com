@@ -5,7 +5,7 @@ title: "Installation and Setup"
 hide_title: true
 ---
 
-# Installation and Setup
+
 
 ## Tezos Installation and Setup <a id="__docusaurus"></a>
 
