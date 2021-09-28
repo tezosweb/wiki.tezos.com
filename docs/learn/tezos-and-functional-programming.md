@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 7
 hide_table_of_contents: true
 title: "Tezos and Functional Programming"
 hide_title: true
