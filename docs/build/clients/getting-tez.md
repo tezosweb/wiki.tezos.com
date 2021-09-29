@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
 hide_table_of_contents: true
-title: "Getting tez"
+title: "Getting Testnet Tez"
 hide_title: true
 ---
 
