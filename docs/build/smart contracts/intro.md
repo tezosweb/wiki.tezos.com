@@ -3,7 +3,6 @@ hide_table_of_contents: true
 title: "Smart Contracts on Tezos"
 hide_title: true
 sidebar_label: "Introduction"
-slug: "/learn/smartcontracts/"
 sidebar_position: 1
 ---
 ## Smart Contracts on Tezos

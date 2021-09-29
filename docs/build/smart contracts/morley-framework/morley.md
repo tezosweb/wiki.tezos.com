@@ -23,7 +23,7 @@ It consists of:
 
   along with a REPL for interactively running instructions.
 
-It's the founding library of [Lorentz](/learn/smartcontracts/morley-framework/lorentz), [Indigo](/learn/smartcontracts/morley-framework/indigo), [Cleveland](/learn/smartcontracts/morley-framework/cleveland) as well as related tools and utilities.
+It's the founding library of [Lorentz](/build/smartcontracts/morley-framework/lorentz), [Indigo](/build/smartcontracts/morley-framework/indigo), [Cleveland](/build/smartcontracts/morley-framework/cleveland) as well as related tools and utilities.
 
 ### Morley Resources
 
