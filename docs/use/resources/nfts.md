@@ -8,7 +8,6 @@ hide_title: true
 
 ### Platforms
 
-* [HEN](https://www.hicetnunc.xyz/%20)
 * [Kalamint](https://kalamint.io/%20)
 * [OneOf](https://oneof.com/%20)
 * [ByteBlock](https://byteblock.art/%20)
