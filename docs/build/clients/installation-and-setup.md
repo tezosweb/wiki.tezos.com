@@ -5,13 +5,186 @@ title: "Installation and Setup"
 hide_title: true
 ---
 
-## Installation and Setup
 
-### Tezos Client Installation and Setup <a id="__docusaurus"></a>
+
+## Tezos Installation and Setup <a id="__docusaurus"></a>
 
 To start with we'll download and install tezos-client and create a couple of test wallets. We'll use [tezos-client](https://tezos.gitlab.io/api/cli-commands.html) - a command line interface to Tezos.
 
-### Install
+## Install
+
+### Linux \(64-bit\)
+
+A quick and easy way to get tezos-client running on Linux is to download the latest `tezos-client` binary, make it executable, and put it somewhere in your path. Alternatively you can add a package repository for your distribution, and install it from there. Using a package is a good idea for production systems as it automates the installation and allow easy updates.
+
+#### Option 1: Install the binary
+
+```text
+$ wget https://github.com/serokell/tezos-packaging/releases/latest/download/tezos-client
+$ chmod +x tezos-client
+$ mkdir -p $HOME/.local/bin
+$ mv tezos-client $HOME/.local/bin
+$ echo 'export PATH="$HOME/.local/bin:$PATH"' >> $HOME/.bashrc
+$ source $HOME/.bashrc
+```
+#### Option 2: Install from source
+
+This information is based on documentation from: [Get Tezos](https://tezos.gitlab.io/introduction/howtoget.html%20)
+
+Tips:
+
+* Use ```tab```to autocomplete partial commands previously entered
+* Use the up and down arrows to cycle through previously entered commands
+
+**1.** Make sure your system is up to date.
+
+```text
+sudo apt-get update
+```
+
+```text
+sudo apt-get upgrade
+```
+
+* If asked if you want to use a certain amount of space for the update, enter: ```y```
+
+
+**2.** Install rust.
+
+```text
+sudo apt install -y rsync git m4 build-essential patch unzip wget pkg-config libgmp-dev libev-dev libhidapi-dev libffi-dev opam jq zlib1g-dev
+```
+
+```text
+wget https://sh.rustup.rs/rustup-init.sh
+```
+
+```text
+chmod +x rustup-init.sh
+```
+
+```text
+./rustup-init.sh --profile minimal --default-toolchain 1.52.1 -y
+```
+
+**3.**  Loading the cargo environment variable
+
+```text
+source $HOME/.cargo/env
+```
+
+**4.** Get the sources
+
+```text
+git clone https://gitlab.com/tezos/tezos.git
+```
+
+```text
+cd tezos
+```
+
+```text
+git checkout latest-release
+```
+**5.** Install the tezos dependencies.
+
+```text
+opam init --bare
+```
+
+* You will be asked: ```do you want to modify ~/.profile? [N/y/f]``` press ```n```.
+* You will then be asked: ```A hook can be added to opam's init scripts to ensure that the shell remains in sync with the opam environment when they are loaded. Set that up? [y/N]``` press ```n```.
+
+```text
+make build-deps
+```
+
+**6.** Compile sources ( This step can take a long time depending on your hardware )
+
+```text
+eval $(opam env)
+```
+
+```text
+make
+```
+
+**7.** Get rolling snapshot
+
+```text
+wget https://mainnet.xtz-shots.io/rolling -O tezos-mainnet.rolling
+```
+
+**8.** Import the snapshot ( This step can take a longtime depending on your hardware )
+
+```text
+./tezos-node snapshot import tezos-mainnet.rolling
+```
+
+**9.** Run the node
+
+```text
+./tezos-node run --allow-all-rpc localhost:8732 --rpc-addr localhost:8732 --history-mode experimental-rolling
+```
+
+**Q&A**
+
+* How do I stop the node?
+
+  * Press ```Ctrl-c``` from within the terminal tab it is running in. Give it a minute or two, if it still does not work press it again.
+
+* Where is Tezos installed?
+
+  * ```~/tezos```
+
+* Where is the blockchain data stored?
+
+    * ```~/.tezos-node```
+
+      * Note that the period in front of the directory denotes a hidden directory. Use ```ls -a``` to show all files and directories including hidden directories.
+* What do I do if my node data becomes corrupted and I need to re-import a new snapshot?
+
+  * You will need to first remove the old data. To do that run ```rm -rf .tezos-node``` from your home directory.
+  * Then from the ```tezos``` directory use the same commands above to re-import new snapshots.
+
+**Updating the node**
+
+**1.** Pull updates from the git repo
+
+```text
+git pull
+```
+
+* This must be done in the tezos directory
+
+**2.** Install the latest dependencies and compile the sources
+
+```text
+make build-deps
+```
+
+```text
+eval $(opam env)
+```
+
+```text
+make
+```
+
+#### Option 3: Using packages on Ubuntu or Fedora
+
+```text
+sudo add-apt-repository ppa:serokell/tezos && sudo apt-get update
+sudo apt-get install -y tezos-client
+sudo apt-get install -y tezos-node
+sudo apt-get install -y tezos-baker-010-ptgranad
+sudo apt-get install -y tezos-endorser-010-ptgranad
+sudo apt-get install -y tezos-accuser-010-ptgranad
+```
+
+#### Windows
+
+Install one of Linux distributions using [Windows Subsystem for Linux \(WSL\)](https://docs.microsoft.com/en-us/windows/wsl/about) \(e.g. Ubuntu 18.04 LTS\) and follow instructions for Linux.
 
 #### Mac OS
 
@@ -23,29 +196,6 @@ $ brew install tezos-client
 ```
 
 `tezos-packaging` also provides prebuilt brew bottles for some macOS versions.
-
-#### Linux \(64-bit\)
-
-A quick and easy way to get tezos-client running on Linux is to download the latest `tezos-client` binary, make it executable, and put it somewhere in your path. Alternatively you can add a package repository for your distribution, and install it from there. Using a package is a good idea for production systems as it automates the installation and allow easy updates.
-
-**Option 1: Install the binary**
-
-```text
-$ wget https://github.com/serokell/tezos-packaging/releases/latest/download/tezos-client
-$ chmod +x tezos-client
-$ mkdir -p $HOME/.local/bin
-$ mv tezos-client $HOME/.local/bin
-$ echo 'export PATH="$HOME/.local/bin:$PATH"' >> $HOME/.bashrc
-$ source $HOME/.bashrc
-```
-
-**Option 2: Using packages on Ubuntu or Fedora**
-
-**More Options**: [Get Tezos](https://tezos.gitlab.io/introduction/howtoget.html%20)
-
-#### Windows
-
-Install one of Linux distributions using [Windows Subsystem for Linux \(WSL\)](https://docs.microsoft.com/en-us/windows/wsl/about) \(e.g. Ubuntu 18.04 LTS\) and follow instructions for Linux.
 
 ### Configure
 

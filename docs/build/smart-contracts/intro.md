@@ -3,7 +3,6 @@ hide_table_of_contents: true
 title: "Smart Contracts on Tezos"
 hide_title: true
 sidebar_label: "Introduction"
-slug: "/learn/smartcontracts/"
 sidebar_position: 1
 ---
 ## Smart Contracts on Tezos
@@ -13,11 +12,11 @@ In this section, we explain what makes smart contracts on Tezos unique, and go o
 1. [Michelson](michelson.md)
 2. [SmartPy](smartpy.md)
 3. [LIGO](ligo.md)
-4. [Morley framework](/learn/smartcontracts/morley-framework/morley)
-   1. [Morley](/learn/smartcontracts/morley-framework/morley)
-   2. [Lorentz](/learn/smartcontracts/morley-framework/lorentz)
-   3. [Indigo](/learn/smartcontracts/morley-framework/indigo)
-   4. [Cleveland](/learn/smartcontracts/morley-framework/cleveland)
+4. [Morley framework](/build/smart-contracts/morley-framework/morley)
+   1. [Morley](/build/smart-contracts/morley-framework/morley)
+   2. [Lorentz](/build/smart-contracts/morley-framework/lorentz)
+   3. [Indigo](/build/smart-contracts/morley-framework/indigo)
+   4. [Cleveland](/build/smart-contracts/morley-framework/cleveland)
 5. [Archetype](archetype.md)
 6. [Formal Verification for Smart Contracts](michelsonandcoq.md)
 
