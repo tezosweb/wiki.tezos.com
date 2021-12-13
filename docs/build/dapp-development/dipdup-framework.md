@@ -4,7 +4,7 @@ hide_table_of_contents: true
 title: "DipDup Framework"
 hide_title: true
 description: >-
-  Create a selective contract indexer in Python or Golang and explose indexed data via GraphQL
+  Create a selective contract indexer in Python or Golang and explore indexed data via GraphQL
 ---
 
 ## DipDup
@@ -13,15 +13,15 @@ description: >-
 
 #### The problem
 
-A minimal setup for a decentralized application is smart contract + web interface working on top of Tezos RPC. That should be enough for simple cases, however once you need history, aggregated data, time series, complex filtering, a custom backend is required. You can surely try to get around by using indexer APIs, like [TzKT](https://api.tzkt.io) or others, but they will never give you the level of customization you want.
+A minimal setup for a decentralized application is smart contract + web interface working on top of Tezos RPC. That should be enough for simple cases, however once you need history, aggregated data, time series, complex filtering, a custom backend is required. You can surely try to get around by using indexer APIs, like [TzKT](https://api.tzkt.io) or others, but they are not the most feasible solutions for the high levels of customization you might want.
 
 #### Selective indexing
 
 Here comes "layer-2" or "selective" indexing:
 1. Only the data relevant to your dApp is fetched during the synchronization;
-2. Your internal data model is dApp specific in oppose to blocks, operations, and other generic entities.
+2. Your internal data model is dApp specific as opposed to blocks, operations, and other generic entities.
 
-DipDup framework utilizes this approach and abstracts developer from the indexing workflow letting him focus on the business logic.
+The DipDup framework utilizes this approach and abstracts developers from the indexing workflow, letting them focus on the business logic.
 
 #### GraphQL interface
 
