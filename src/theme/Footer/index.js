@@ -159,6 +159,16 @@ function Footer() {
             ))}
           </div>
         )}
+        <hr style={{text: 'white'}} />
+      <div className="footer-small-text privacy-notice">
+            <a
+              href="https://tezos.com/privacy-notice"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Privacy Notice
+            </a>
+        </div>
         {(logo || copyright) && (
           <div className="footer__bottom text--center">
             {logo && (logo.src || logo.srcDark) && (
