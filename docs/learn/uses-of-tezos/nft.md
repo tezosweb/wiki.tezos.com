@@ -32,8 +32,8 @@ Recently, NFTs have been a powerful primitive demonstrating usefulness in the cr
 * [McLaren Racing](https://mclarenracingcollective.com/) - The McLaren Racing Collective, powered by Tezos, is an innovative platform where fans and collectors can purchase McLaren Racing digital collectibles or non-fungible tokens (NFTs).
 * [MinterPop](https://minterpop.com/)
 * [Objkt](https://objkt.com/) 
-* [OpenMinter](https://github.com/tqtezos/minter) ****and [Minter-SDK](https://github.com/tqtezos/minter-sdk) - A reusable dApp and SDK that allows anyone to create, collect, sell, or swap NFTs on Tezos.
 * [OneOf](https://oneof.com/) - OneOf is a green NFT platform built for the music community to connect fans and collectors at all levels with their favorite artists.
+* [OpenMinter](https://github.com/tqtezos/minter) ****and [Minter-SDK](https://github.com/tqtezos/minter-sdk) - A reusable dApp and SDK that allows anyone to create, collect, sell, or swap NFTs on Tezos.
 * [Play with Brio ](https://playwithbrio.com/home) - The first ever eSports skill based platform on the Tezos blockchain.
 * [Rarible](https://rarible.com)
 * [RedBull Racing Honda](https://redbullracingcollectibles.com/) - Bringing the world of Red Bull Racing closer to the fans with a series of amazing digital artifacts.
