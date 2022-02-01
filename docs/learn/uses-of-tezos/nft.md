@@ -24,24 +24,22 @@ Recently, NFTs have been a powerful primitive demonstrating usefulness in the cr
 * [tzNFT](https://github.com/tqtezos/nft-tutorial) - a tutorial showing users how to originate and interact with the FA2 NFT contract implementation.
 * [TZIP-021](https://gitlab.com/tzip/tzip/-/blob/tzip-21-spec/proposals/tzip-21/tzip-21.md) - an emerging contract multimedia metadata standard. 
 
-### Tools and Applications
-
-* \*\*\*\*[Truesy](https://www.truesy.com/) ****- a highly curated NFT marketplace
-* [Kalamint](https://kalamint.io/) - A community owned NFT marketplace on Tezos.
-* [OpenMinter](https://github.com/tqtezos/minter) ****and [Minter-SDK](https://github.com/tqtezos/minter-sdk) - A reusable dApp and SDK that allows anyone to create, collect, sell, or swap NFTs on Tezos.
-* \*\*\*\*[tzcolors](https://www.tzcolors.io)\*\*\*\*
-* \*\*\*\*[TezAuction](https://tez.auction/#/)\*\*\*\*
+### NFT Marketplaces 
 * [CricTez](https://crictez.medium.com/introducing-crictez-21a284c60e94)
+* [Emergents TCG](https://emergentstcg.com/) - The trading card game where you own your cards
+* [Hic Et Nunc](https://hicetnunc.art/) **- The site hicetnunc.xyz was discontinued, and replaced by the community with hicetnunc.art**
+* [Kalamint](https://kalamint.io/) 
+* [McLaren Racing](https://mclarenracingcollective.com/) - The McLaren Racing Collective, powered by Tezos, is an innovative platform where fans and collectors can purchase McLaren Racing digital collectibles or non-fungible tokens (NFTs).
 * [MinterPop](https://minterpop.com/)
-* [OneOf](https://oneof.com/)
-* [RedBull Racing Honda](https://www.redbull.com/int-en/redbullracing/tezos-joins-as-official-blockchain-partner)
-* [McLaren Racing](https://www.mclaren.com/racing/partners/tezos/)
-* [Emergents TCG](https://www.emergents.gg/)
-* [Play with Brio ](https://playwithbrio.com/home)
-* [Tezos Profiles](https://tzprofiles.com/)
-* [Ipocamp](https://www.ipocamp.io/)
-
-
+* [Objkt](https://objkt.com/) 
+* [OneOf](https://oneof.com/) - OneOf is a green NFT platform built for the music community to connect fans and collectors at all levels with their favorite artists.
+* [OpenMinter](https://github.com/tqtezos/minter) ****and [Minter-SDK](https://github.com/tqtezos/minter-sdk) - A reusable dApp and SDK that allows anyone to create, collect, sell, or swap NFTs on Tezos.
+* [Play with Brio ](https://playwithbrio.com/home) - The first ever eSports skill based platform on the Tezos blockchain.
+* [Rarible](https://rarible.com)
+* [RedBull Racing Honda](https://redbullracingcollectibles.com/) - Bringing the world of Red Bull Racing closer to the fans with a series of amazing digital artifacts.
+* [Tezos Profiles](https://tzprofiles.com/) - Tezos Profiles enable you to associate your online identity with your Tezos account.
+* [Truesy](https://www.truesy.com/) 
+* [tzcolors](https://www.tzcolors.io)
 
 ### NFT Examples
 
