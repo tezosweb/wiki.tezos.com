@@ -27,7 +27,7 @@ Recently, NFTs have been a powerful primitive demonstrating usefulness in the cr
 ### NFT Marketplaces 
 * [CricTez](https://crictez.medium.com/introducing-crictez-21a284c60e94)
 * [Emergents TCG](https://emergentstcg.com/) - The trading card game where you own your cards
-* [Hic Et Nunc](https://hicetnunc.art/) **- The site hicetnunc.xyz was discontinued, and replaced by the community with hicetnunc.art**
+* [Hic Et Nunc](https://hicetnunc.art/) - The site hicetnunc.xyz was discontinued, and replaced by the community with hicetnunc.art
 * [Kalamint](https://kalamint.io/) 
 * [McLaren Racing](https://mclarenracingcollective.com/) - The McLaren Racing Collective, powered by Tezos, is an innovative platform where fans and collectors can purchase McLaren Racing digital collectibles or non-fungible tokens (NFTs).
 * [MinterPop](https://minterpop.com/)
