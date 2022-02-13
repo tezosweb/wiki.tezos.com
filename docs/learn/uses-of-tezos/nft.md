@@ -44,7 +44,7 @@ Recently, NFTs have been a powerful primitive demonstrating usefulness in the cr
 * [Teztopia](https://app.tezotopia.com/)
 * [Truesy](https://www.truesy.com/) 
 * [tzcolors](https://www.tzcolors.io)
-* [Ubisoft Quarts](https://quartz.ubisoft.com/welcome/)
+* [Ubisoft Quartz](https://quartz.ubisoft.com/welcome/)
 * [Versum](https://versum.xyz/)
 
 ### NFT Examples
