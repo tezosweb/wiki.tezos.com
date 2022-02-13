@@ -25,8 +25,9 @@ Recently, NFTs have been a powerful primitive demonstrating usefulness in the cr
 * [TZIP-021](https://gitlab.com/tzip/tzip/-/blob/tzip-21-spec/proposals/tzip-21/tzip-21.md) - an emerging contract multimedia metadata standard. 
 
 ### NFT Marketplaces 
-* [CricTez](https://crictez.medium.com/introducing-crictez-21a284c60e94)
+* [Arago] (https://arago.studio/)
 * [Emergents TCG](https://emergentstcg.com/) - The trading card game where you own your cards
+* [FX(hash)] (https://www.fxhash.xyz/)
 * [Hic Et Nunc](https://hicetnunc.art/) **- The site hicetnunc.xyz was discontinued, and replaced by the community with hicetnunc.art**
 * [Kalamint](https://kalamint.io/) 
 * [McLaren Racing](https://mclarenracingcollective.com/) - The McLaren Racing Collective, powered by Tezos, is an innovative platform where fans and collectors can purchase McLaren Racing digital collectibles or non-fungible tokens (NFTs).
@@ -34,12 +35,17 @@ Recently, NFTs have been a powerful primitive demonstrating usefulness in the cr
 * [Objkt](https://objkt.com/) 
 * [OneOf](https://oneof.com/) - OneOf is a green NFT platform built for the music community to connect fans and collectors at all levels with their favorite artists.
 * [OpenMinter](https://github.com/tqtezos/minter) ****and [Minter-SDK](https://github.com/tqtezos/minter-sdk) - A reusable dApp and SDK that allows anyone to create, collect, sell, or swap NFTs on Tezos.
+* [Pixle Potus](https://www.pixelpotus.com/)
 * [Play with Brio ](https://playwithbrio.com/home) - The first ever eSports skill based platform on the Tezos blockchain.
 * [Rarible](https://rarible.com)
 * [RedBull Racing Honda](https://redbullracingcollectibles.com/) - Bringing the world of Red Bull Racing closer to the fans with a series of amazing digital artifacts.
+* [Tezos Domains](https://tezos.domains/) - Tezos domain names are FA2-compliant NFTs names that are stored on the Tezos blockchain.
 * [Tezos Profiles](https://tzprofiles.com/) - Tezos Profiles enable you to associate your online identity with your Tezos account.
+* [Teztopia](https://app.tezotopia.com/)
 * [Truesy](https://www.truesy.com/) 
 * [tzcolors](https://www.tzcolors.io)
+* [Ubisoft Quarts](https://quartz.ubisoft.com/welcome/)
+* [Versum](https://versum.xyz/)
 
 ### NFT Examples
 
