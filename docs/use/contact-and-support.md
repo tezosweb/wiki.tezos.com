@@ -17,9 +17,12 @@ Note: Tezos is a decentralized project and ecosystem, there is no 'official' sup
   
 Please reach out:
 
-* [Email](mailto:hello@tezoscommons.org%20)
-* [Telegram](https://t.me/joinchat/BtLGEcc-Ed4xNmMy%20)
-* [Discord](https://discord.com/invite/hsSEtAb9er%20)
+* [Tezos Agora Forum](https://forum.tezosagora.org/) Tezos Agora Forum
+* [Tezos Discord](https://discord.com/invite/udZwhQn) Offical Tezos Discord site.
+* [TezCorps Discord](https://dsc.gg/tezcorps) TezCorps Discord is a public good for #Tezos, connecting all legitimate teams & friends together!
+* [Tezos Stack Exchange](https://tezos.stackexchange.com/) The Tezos Stack Exchange is mainly used for technical development support.
+* [Tezos Telegram](https://t.me/TezosPlatform) Offical Tezos Telegram
+
 
 
 
