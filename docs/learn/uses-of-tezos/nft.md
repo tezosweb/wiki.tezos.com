@@ -25,7 +25,8 @@ Recently, NFTs have been a powerful primitive demonstrating usefulness in the cr
 * [TZIP-021](https://gitlab.com/tzip/tzip/-/blob/tzip-21-spec/proposals/tzip-21/tzip-21.md) - an emerging contract multimedia metadata standard. 
 
 ### NFT Marketplaces 
-* [Arago] (https://arago.studio/)
+* [Arago](https://arago.studio/)
+* [Dogami](https://dogami.com/)
 * [Emergents TCG](https://emergentstcg.com/) - The trading card game where you own your cards
 * [FX(hash)](https://www.fxhash.xyz/)
 * [Hic Et Nunc](https://hicetnunc.art/) - The site hicetnunc.xyz was discontinued, and replaced by the community with hicetnunc.art
@@ -42,7 +43,7 @@ Recently, NFTs have been a powerful primitive demonstrating usefulness in the cr
 * [Tezos Domains](https://tezos.domains/) - Tezos domain names are FA2-compliant NFTs names that are stored on the Tezos blockchain.
 * [Tezos Profiles](https://tzprofiles.com/) - Tezos Profiles enable you to associate your online identity with your Tezos account.
 * [Teztopia](https://app.tezotopia.com/)
-* [Truesy](https://www.truesy.com/) 
+* [Truesy](https://www.truesy.com/)
 * [tzcolors](https://www.tzcolors.io)
 * [Ubisoft Quartz](https://quartz.ubisoft.com/welcome/)
 * [Versum](https://versum.xyz/)

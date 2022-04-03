@@ -8,11 +8,11 @@ hide_title: true
 
 ### Platforms
 
-* [Kalamint](https://kalamint.io/%20)
-* [OneOf](https://oneof.com/%20)
-* [ByteBlock](https://byteblock.art/%20)
+* [Hic et nunc](https://www.hicetnunc.art) Hicetnunc.art is hosted by DNS.xyz
 * [InterPop](https://www.interpop.io/)
+* [Kalamint](https://kalamint.io/%20)
 * [Objkt](https://objkt.com/)
+* [OneOf](https://oneof.com/%20)
 
 ### Projects that offer or create NFT's
 
@@ -20,7 +20,7 @@ hide_title: true
 * [Tezos Mandala Art](https://tezos-mandala.art/)
 * [PixelPotus](https://www.pixelpotus.com/%20)
 * [TzColors](https://www.tzcolors.io/%20)
-* [Tezonians](https://tezonians.space/%20)
+
 
 
 

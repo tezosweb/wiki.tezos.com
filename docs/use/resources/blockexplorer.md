@@ -6,12 +6,11 @@ hide_title: true
 ---
 ## Block Explorers
 
-* [TZKT](https://tzkt.io)
-* [Better Call Dev - "Michelson Contract Explorer"](https://better-call.dev/)
-* [TZStats](https://tzstats.com/)
 * [Arronax](https://arronax.io/tezos/mainnet/blocks)
+* [Better Call Dev - "Michelson Contract Explorer"](https://better-call.dev/)
 * [Tezblock](https://tezblock.io/)
-* [TezTracker](https://teztracker.com/en/mainnet) \(Does not appear to be maintained\)
+* [TZKT](https://tzkt.io)
+* [TZStats](https://tzstats.com/)
 
 An interesting real-time transaction monitor:
 
