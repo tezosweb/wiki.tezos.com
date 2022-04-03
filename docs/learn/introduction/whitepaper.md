@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 hide_table_of_contents: true
 title: "Tezos White Paper"
 hide_title: true
@@ -261,7 +261,7 @@ The protocol unfolds in cycles of 4,096 blocks. At the beginning of each cycle, 
 
 _Four cycles of the proof-of-stake mechanism:_ 
 
-![](./assets/pos.png)
+![](./../assets/pos.png)
 
 ##### Clock
 

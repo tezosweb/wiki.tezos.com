@@ -6,8 +6,16 @@ hide_title: true
 ---
 ## DEXs
 
-* [Quipuswap](https://quipuswap.com/swap%20)
-* [DEXTER](https://app.dexter.exchange/) \( Reference only, no longer maintained, do not use \)
+### What is a DEX?
+Read the comprehensive Coinbase article [here](https://www.coinbase.com/learn/crypto-basics/what-is-a-dex)
+
+* Dexter (Reference only, no longer maintained)
+* [Flame Defi](https://flamedefi.io/)
+* [Plenty](https://www.plentydefi.com/)
+* [Quipuswap](https://quipuswap.com/)
+* [Smartlink](https://app.vortex.network/) Vortex App
+* [Spicy Swap](https://spicyswap.xyz/#/)
+* [Youves](https://youves.com/)
 
 
 

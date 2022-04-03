@@ -1,14 +1,13 @@
 ---
+sidebar_position: 1
 hide_table_of_contents: true
-title: "Intro to Tezos"
+title: "Tezos Introduction"
 hide_title: true
 slug: /learn/basics/
-sidebar_label: "Introduction"
+sidebar_label: "Tezos - What is it?"
 ---
 
-## Intro to Tezos
-
-### What is Tezos? <a id="xtz"></a>
+## What is Tezos? <a id="xtz"></a>
 
 Tezos is an open-source, community-governed, blockchain network capable of running complex smart contracts for asset settlement and decentralized applications \(dApps\) which benefit from censorship resistance, decentralization, and user-control.
 
