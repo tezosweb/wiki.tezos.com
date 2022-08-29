@@ -11,7 +11,7 @@ hide_title: true
 
 The Tezos Foundation offers a grants program that is open to entities and initiatives that will help to ensure the long-term success of Tezos.
 
-Greater deatials and the grant application can be found [here](https://tezos.foundation/grants/).
+Greater details and the grant application can be found [here](https://tezos.foundation/grants/).
 
 ## Small Grants Program ( US )
 
