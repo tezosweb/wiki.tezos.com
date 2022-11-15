@@ -2,6 +2,9 @@
 hide_table_of_contents: true
 title: "Proof-of-Stake"
 hide_title: true
+sidebar_label: "Introduction"
+slug: "/learn/proofofstake/"
+sidebar_position: 1
 ---
 ## Proof-of-Stake
 

@@ -8,13 +8,11 @@ hide_title: true
 
 ### Platforms
 
-* [HEN](https://www.hicetnunc.xyz/%20)
 * [Kalamint](https://kalamint.io/%20)
 * [OneOf](https://oneof.com/%20)
 * [ByteBlock](https://byteblock.art/%20)
 * [InterPop](https://www.interpop.io/)
-* [OneOf](https://oneof.com/%20)
-* [Truesy](https://www.truesy.com/%20)
+* [Objkt](https://objkt.com/)
 
 ### Projects that offer or create NFT's
 

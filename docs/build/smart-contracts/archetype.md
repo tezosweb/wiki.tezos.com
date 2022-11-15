@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 hide_table_of_contents: true
 title: "Archetype"
 hide_title: true
@@ -7,7 +7,7 @@ hide_title: true
 
 ## Archetype
 
-### **Archetype**
+### Archetype
 
 [Archetype](https://archetype-lang.org) is a DSL \(domain-specific language \) for Tezos which facilitates formal verification and transcodes contracts to SmartPy and LIGO.
 

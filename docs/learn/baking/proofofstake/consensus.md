@@ -2,6 +2,7 @@
 hide_table_of_contents: true
 title: "The Tezos Consensus Algorithm"
 hide_title: true
+sidebar_position: 2
 ---
 ## The Tezos Consensus Algorithm
 
@@ -68,7 +69,7 @@ Blocks have priority 0 and \(almost\) all the required endorsements. A concrete 
 
 ### Scalability <a id="scalability"></a>
 
-Currently, Tezos does around 30-40 transactions per second.
+Currently, Tezos does around 200 transactions per second.
 
 ### The past and future of Emmy+
 
