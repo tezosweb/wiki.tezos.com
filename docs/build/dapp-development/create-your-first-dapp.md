@@ -12,6 +12,7 @@ description: >-
 
 ### How to build your first Tezos dapp \(2021 edition\) <a id="1ce3"></a>
 
+Created by [Claude Barde](https://claudebarde.medium.com/)
 
 It’s been more than a year since I wrote [How to build your first dapp on Tezos](https://betterprogramming.pub/build-your-first-dapp-on-tezos-270c568d4fe9). At that time, creating dapps that work with the Tezos blockchain was still in its infancy, it was difficult, the tooling was nonexistent or undocumented and the features limited. There was only a handful of developers who had experience with building apps on Tezos. I started my journey on Tezos at this point when building dapps was hard and I decided to document it in order to help other developers who would come after me.
 
@@ -32,9 +33,9 @@ As mentioned above, the dapp is using two main packages: the `Taquito` package \
 
 From the `Taquito` package, we need the `TezosToolkit` to communicate with the Tezos blockchain. From the `BeaconWallet` package, we need the `BeaconWallet` class to interact with the users’ wallets. In addition to that, we are also going to import different things we will need to set up the dapp:
 
-* `onMount` from the `svelte` package allows us to prepare the dapp environment when the users load the dapp, we will set up their wallet and their connection to the blockchain
-* the `Taquito` package exposes different types and interfaces that we can use with TypeScript to make our code more robust, in this case, `ContractAbstraction` \(that represents the instance of a contract on the dapp level\) and `Wallet` \(that represents an instance of a wallet\)
-* `NetworkType` is a useful [enum](https://www.typescriptlang.org/docs/handbook/enums.html) exposed by the `@airgap/beacon-wallet` that we will use to connect the wallet.
+- `onMount` from the `svelte` package allows us to prepare the dapp environment when the users load the dapp, we will set up their wallet and their connection to the blockchain
+- the `Taquito` package exposes different types and interfaces that we can use with TypeScript to make our code more robust, in this case, `ContractAbstraction` \(that represents the instance of a contract on the dapp level\) and `Wallet` \(that represents an instance of a wallet\)
+- `NetworkType` is a useful [enum](https://www.typescriptlang.org/docs/handbook/enums.html) exposed by the `@airgap/beacon-wallet` that we will use to connect the wallet.
 
 > Note: you don’t need to install the `Beacon SDK` package yourself, it is part of the `BeaconWallet` package and will already be present in your `node_modules` folder.
 
@@ -56,8 +57,8 @@ After the wallet has been instantiated, we are checking if there is already an a
 
 ![](../../assets/image39.png)
 
-* `Tezos.setWalletProvider(wallet)`: this step is necessary to register the newly created wallet and to use it to sign transactions. The argument is an instance of the `BeaconWallet`
-* `userAddress = activeAccount.address`: we get the user’s address which can be useful as much as in the interface \(so the users can know with which address they are connected\) as in the code \(for example, in the following line to fetch the existing tickets\)
+- `Tezos.setWalletProvider(wallet)`: this step is necessary to register the newly created wallet and to use it to sign transactions. The argument is an instance of the `BeaconWallet`
+- `userAddress = activeAccount.address`: we get the user’s address which can be useful as much as in the interface \(so the users can know with which address they are connected\) as in the code \(for example, in the following line to fetch the existing tickets\)
 
 After setting up the gears of the dapp, we also want to take care of its main purpose: buying and redeeming tickets. We are going to write a custom function that fetches the users’ tickets, either when they connect their wallet or when they return to the dapp:
 
@@ -84,9 +85,9 @@ After the users connect their wallet, we are going to save their address in a va
 
 ```text
 {#if userAddress}
-   
+
 {:else}
-   
+
 {/if}
 ```
 
@@ -180,4 +181,3 @@ From here, you can build your knowledge and try to interact with more complex co
 If you want to go further with Taquito, you can check the [official documentation](https://tezostaquito.io/docs/quick_start) with a ton of examples and useful tips for your dapps.
 
 Don’t hesitate to post a link in the comment section to what you built after following this tutorial 😄
-
