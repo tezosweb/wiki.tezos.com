@@ -1,11 +1,11 @@
 ---
-sidebar_position: 7
+sidebar_position: 4
 hide_table_of_contents: true
-title: "Tezos and Functional Programming"
+title: "Tezos Language"
 hide_title: true
 ---
 
-## Tezos and Functional Programming
+## Tezos Language and Functional Programming
 
 #### OCaml, the language of the Tezos protocol
 
@@ -25,5 +25,5 @@ It is a declarative programming paradigm, which means programming is done with e
 
 Here is a diagram that shows the high-level differences between the EVM \(Ethereum Virtual Machine\), WASM \(Web Assembly\) and Michelson:
 
-![](../assets/languages.png)
+![](../../assets/languages.png)
 
