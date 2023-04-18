@@ -8,7 +8,7 @@ hide_title: true
 
 ### Should I bake or delegate? <a id="bakeordelegate"></a>
 
-Self-baking lets a baker earn a higher yield, but requires technical expertise and time in setting up a baker and running the baking software reliably with as little downtime as possible. By delegating Tezos tokens, a token holder avoids this process altogether but usually earns a lower yield. In the current protocol, token holders with less than 8,000 XTZ can only participate in baking by delegating to another baker.
+Self-baking lets a baker earn a higher yield, but requires technical expertise and time in setting up a baker and running the baking software reliably with as little downtime as possible. By delegating Tezos tokens, a token holder avoids this process altogether but usually earns a lower yield. In the current protocol, token holders with less than 6,000 XTZ can only participate in baking by delegating to another baker.
 
 ### How much can I earn by baking or delegating? <a id="earn"></a>
 

@@ -16,17 +16,17 @@ Tezos also allows stakeholders to upgrade the amendment process itself. As a res
 
 #### Voters / Bakers <a id="voters--bakers"></a>
 
-Baking is how blocks are produced and validated on a Tezos blockchain using Liquid Proof-of-Stake. Bakers \(also known as "delegates"\) obtain the right to create \(i.e. bake\) a block when a roll of tokens \(1 roll = 8,000 ꜩ\) they own \(or that is delegated to them\) is randomly selected to produce or validate a block.
+Baking is how blocks are produced and validated on a Tezos blockchain using Liquid Proof-of-Stake. Bakers \(also known as "delegates"\) obtain the right to create \(i.e. bake\) a block when a roll of tokens \(1 roll = 6,000 ꜩ\) they own \(or that is delegated to them\) is randomly selected to produce or validate a block.
 
 As the maintainers of a Tezos network, **bakers are also the voters in a Tezos formal upgrade process**, with their votes proportional to the size of their stake \(including delegations\).
 
 #### Votes / Rolls <a id="votes--rolls"></a>
 
-To speed up computations for deciding which delegates are selected to bake, the Tezos ledger tracks tokens for staking and governance purposes as "rolls". Rolls are aggregated at the delegate level, which means a baker’s baking power is proportional to the amount of tokens delegated to them, rounded down to the nearest roll. A roll is currently set to 8,000 ꜩ.
+To speed up computations for deciding which delegates are selected to bake, the Tezos ledger tracks tokens for staking and governance purposes as "rolls". Rolls are aggregated at the delegate level, which means a baker’s baking power is proportional to the amount of tokens delegated to them, rounded down to the nearest roll. A roll is currently set to 6,000 ꜩ.
 
 #### Delegators <a id="delegators"></a>
 
-If someone does not have 8,000 ꜩ or does not want to set up computing infrastructure to bake blocks, they may delegate their tokens to a baker. The baker does not own or control the delegated tokens in any way. In particular, it cannot spend them. However, if and when one of these tokens is randomly selected to bake a block, that right will belong to the baker. In practice, bakers usually share the additional revenue generated from the delegated tokens with the coin holder.
+If someone does not have 6,000 ꜩ or does not want to set up computing infrastructure to bake blocks, they may delegate their tokens to a baker. The baker does not own or control the delegated tokens in any way. In particular, it cannot spend them. However, if and when one of these tokens is randomly selected to bake a block, that right will belong to the baker. In practice, bakers usually share the additional revenue generated from the delegated tokens with the coin holder.
 
 #### The Five Stages of Tezos Governance <a id="the-five-stages-of-tezos-governance"></a>
 

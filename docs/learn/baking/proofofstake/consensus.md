@@ -12,7 +12,7 @@ Tezos uses a Nakamoto-style PoS algorithm for consensus, which since [Babylon](h
 
 1. **Block Creation \(Baking\)**
 
-   Block creation is the way that the blockchain makes progress. In Tezos, participants who create blocks are called _bakers_. To be considered a baker, a participant needs to own at least 8,000 ꜩ \(1 roll\). The more rolls someone has, the higher their chance of being given the rights to bake the next block. If there are 10 rolls activated at some point in time, and a baker owns 2/10 of those rolls, they have a 20% chance of being given the rights to create the next block. This means that if a baker has 8,000 ꜩ or 15,999 ꜩ, they have the same baking rights in the system.
+   Block creation is the way that the blockchain makes progress. In Tezos, participants who create blocks are called _bakers_. To be considered a baker, a participant needs to own at least 6,000 ꜩ \(1 roll\). The more rolls someone has, the higher their chance of being given the rights to bake the next block. If there are 10 rolls activated at some point in time, and a baker owns 2/10 of those rolls, they have a 20% chance of being given the rights to create the next block. This means that if a baker has 6,000 ꜩ or 15,999 ꜩ, they have the same baking rights in the system.
 
    Baking rights are set in terms of priorities. For example, if there are 10 rolls, the protocol could randomly select a priority list as follows:
 
@@ -49,13 +49,13 @@ Tezos uses a Nakamoto-style PoS algorithm for consensus, which since [Babylon](h
 
 ### Delegation <a id="delegation"></a>
 
-If someone does not have 8,000 ꜩ or does not want to set up computing infrastructure to bake blocks, they can delegate their coins to a baker. Delegating lets coin holders "lend" their coins to a baker. As a result, the baker has a higher probability of being selected, and the baker in turn shares the additional revenue with the coin holder. Importantly, this process does not actually transfer ownership of coins. The baker cannot spend the ꜩ delegated to them, and bakers cannot run away with other people's money.
+If someone does not have 6,000 ꜩ or does not want to set up computing infrastructure to bake blocks, they can delegate their coins to a baker. Delegating lets coin holders "lend" their coins to a baker. As a result, the baker has a higher probability of being selected, and the baker in turn shares the additional revenue with the coin holder. Importantly, this process does not actually transfer ownership of coins. The baker cannot spend the ꜩ delegated to them, and bakers cannot run away with other people's money.
 
 Groups have sprung up offering competitive rates for their baking services, and most charge ~10-20% fees on the rewards that people obtain by delegating to them.
 
 This use of delegation is the reason many people refer to Tezos as a [Liquid Proof-of-Stake](https://medium.com/tezos/liquid-proof-of-stake-aec2f7ef1da7) system.
 
-**To summarize:** The Tezos consensus protocol called Emmy+ is a Nakamoto-style Liquid PoS consensus algorithm. Delegates \(people who have at least 8,000 ꜩ of delegated funds\) are given the responsibility of creating and endorsing blocks. They are rewarded for their action. They are also required to stake some of their own capital in order to ensure honest behavior.
+**To summarize:** The Tezos consensus protocol called Emmy+ is a Nakamoto-style Liquid PoS consensus algorithm. Delegates \(people who have at least 6,000 ꜩ of delegated funds\) are given the responsibility of creating and endorsing blocks. They are rewarded for their action. They are also required to stake some of their own capital in order to ensure honest behavior.
 
 ### Finality in Tezos <a id="finality"></a>
 
