@@ -9,7 +9,7 @@ hide_title: true
 
 ### Introduction to Corporate Baking
 
-Baking within Tezos refers to the act of producing and validating new blocks for the Tezos network. Under Tezos’ Liquid Proof of Stake \(LPoS\) design, stakeholders retain the ability to either bake on their own or delegate to a bakery, who will charge a fee for their services. In order for a stakeholder to begin baking on their own, they must hold at a minimum 8,000 tez, following the passing of the Athens protocol upgrade in 2019.
+Baking within Tezos refers to the act of producing and validating new blocks for the Tezos network. Under Tezos’ Liquid Proof of Stake \(LPoS\) design, stakeholders retain the ability to either bake on their own or delegate to a bakery, who will charge a fee for their services. In order for a stakeholder to begin baking on their own, they must hold at a minimum 6,000 tez, following the passing of the Athens protocol upgrade in 2019.
 
 This design is referred to as being ‘liquid’ not only in the sense that there are no fixed set of validators producing and validating blocks on the network, as in a Delegated Proof of Stake \(DPoS\) design, but, stakeholders have the additional ability to bake on their own \(PoS\) and their delegated stake is never locked, it remains ‘liquid’ and free to move.
 

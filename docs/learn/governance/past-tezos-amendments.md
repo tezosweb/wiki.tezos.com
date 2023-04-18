@@ -13,7 +13,7 @@ hide_title: true
 
 Athens was the first proposed protocol amendment for Tezos. Two proposals -  “[Athens A](https://forum.tezosagora.org/t/athens-a-pt24m4xip/29)” and “[Athens B](https://forum.tezosagora.org/t/athens-b-psd1ynubh/33)” were injected by the development team, [Nomadic Labs](https://blog.nomadic-labs.com/athens-our-proposals-for-the-first-voted-amendment.html) in February 2019. 
 
-Of the two proposals, Athens A sought to increase the gas limit and reduce the roll size required to bake from 10,000 tez to 8,000 tez. Athens B sought to just increase the gas limit. Athens A was autonomously [activated](https://twitter.com/TezosAgoraBot/status/1133901612790034432?s=20) onto the protocol in May 2019. 
+Of the two proposals, Athens A sought to increase the gas limit and reduce the roll size required to bake from 10,000 tez to 6,000 tez. Athens B sought to just increase the gas limit. Athens A was autonomously [activated](https://twitter.com/TezosAgoraBot/status/1133901612790034432?s=20) onto the protocol in May 2019. 
 
 For a full list of changes be sure to read the corresponding blog [post](https://blog.nomadic-labs.com/athens-proposals-injected.html) from Nomadic Labs and [reflection](https://medium.com/tqtezos/reflecting-on-athens-the-first-self-amendment-of-tezos-4791ab3b1de1) by Jacob Arluck. 
 

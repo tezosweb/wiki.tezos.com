@@ -118,7 +118,7 @@ The keys are stored in the directory ./tezos-client in your home directory. This
 
 **Let’s start Baking!**
 
-The first step is to activate the account for baking so that you start to get baking and endorsement rights. It will take at least 2 cycles before you get rights in a snapshot and 5 cycles before you start to bake \(a cycle is just under 3 days\). So once you have activated, you won’t need to start your baker and endorsement processes for 21 days although it doesn’t matter if you start them straight away so they are ready to go. You also need to fund your baking address with at least 1 roll \(1 roll = 8,000 tez\); you don’t want to miss your first block or endorsement!
+The first step is to activate the account for baking so that you start to get baking and endorsement rights. It will take at least 2 cycles before you get rights in a snapshot and 5 cycles before you start to bake \(a cycle is just under 3 days\). So once you have activated, you won’t need to start your baker and endorsement processes for 21 days although it doesn’t matter if you start them straight away so they are ready to go. You also need to fund your baking address with at least 1 roll \(1 roll = 6,000 tez\); you don’t want to miss your first block or endorsement!
 
 `./tezos-client register key <baking_address> as delegate`
 
