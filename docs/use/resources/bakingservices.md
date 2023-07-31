@@ -13,9 +13,9 @@ hide_title: true
 
 ### Tools for Baking
 
-* [Kiln](https://tezos-kiln.org/%20)
+* [Kiln](https://tezos-kiln.org/)
   * " [Kiln](https://gitlab.com/obsidian.systems/kiln) is a tool for baking on the Tezos blockchain through an easy-to-use UI."
-* [TRD](https://github.com/tezosland/tezos-reward-distributer%20)
+* [TRD](https://github.com/tezosland/tezos-reward-distributer)
 
   * "software for distributing baking rewards with delegators."
 
